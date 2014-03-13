@@ -1,0 +1,57 @@
+body,td,th {
+	color: #CDCDCD;
+	font-family: Papyrus;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: justify;
+}
+body {
+	background-image: url(http://mindofthewarrior.com/images/snakeskin_superred.jpg);
+	text-align: justify;
+	background-attachment: fixed;
+}
+.smaller_text {font-size: 16px
+}
+.medium_text {font-size: 17px
+}
+.silver_old {
+	color: #A7A7A7;
+}
+.golden_new {
+	color: #FEFF00;
+}
+.darker_grey {
+	color: #666666;
+}
+a:link {
+	color: #A7A7A7;
+}
+a:visited {
+	color: #41854D;
+}
+.title {
+	font-size: 22px;
+}
+.title_cardinal {
+	font-size: 22px;
+	color: #C40302;
+}
+.title_golden {
+	font-size: 22px;
+	color: #FEFF00;
+}
+a:hover {
+	color: #FEFF00;
+}
+.cardinal {
+	color: #C40302;
+}
+.golden {
+	color: #F8EE18;
+}
+.chow_fun {
+	font: "Chow Fun";
+}
+a:active {
+	color: #DED841;
+}
