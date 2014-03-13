@@ -41,6 +41,13 @@ a {
 	cursor: pointer;
 }
 
+.image_link {
+	text-decoration: none;
+}
+
+.block_display {
+	display: block;
+}
 
 .red_text {
 	color: #CD0000;
