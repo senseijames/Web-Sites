@@ -1,0 +1,102 @@
+﻿body{
+	overflow: hidden;
+}
+
+#background_image{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#main_content_area{
+
+}
+
+
+#white_card_div{
+	position:absolute;
+	top: 6%;
+	left:10%;
+	height: 100%;
+}
+
+#white_card{
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:0;
+}
+
+#blue_card{
+	position:relative;
+	bottom:25px;
+	right:0px;
+	z-index: 1;
+}
+
+#home_mission_statement {
+	position:relative;
+	bottom:430px;
+	left: 278px;
+	z-index: 2;
+}
+
+#home_mission_statement div p{
+	position: relative;
+	width: 340px;
+	top: 50px;
+	right: 170px;
+	font-size: 20px;
+	font-family: Times New Roman;
+	color: #ffffff;
+	z-index: 3;
+}
+
+#footer_address p{
+	position:relative;
+	bottom: 297px;
+	text-align:center;
+	font-size: 12px;
+	font-family: Arial;
+	z-index: 4;
+	color: #ffffff;
+}
+
+#header_underline {
+	position:relative;
+	top:50px;
+	right: 100px;
+}
+
+#small_logo {
+	position:relative;
+	top: 35px;
+	left: 65px;
+}
+
+#links {
+	position:relative;
+	right: 85px;
+	bottom: 520px;
+	z-index: 4;
+	text-align:right;
+}
+
+#links ul li {
+	list-style-type:none;
+}
+
+#links ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-family: Courier New;
+}
+
+.larger {
+	font-size: 20px;
+}
+
+p a{
+	color: #ffffff;
+}
