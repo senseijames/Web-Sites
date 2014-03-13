@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.title {
+	font-family: "Papyrus", Times, serif;
+	font-size: 40px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.supertitle{
+	font-family: "Papyrus", Times, serif;
+	font-size: 50px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #000;
+} 
+
+/*
+.custom_underline {
+	text-decoration: none; 
+	background: url(images/custom_underline.png) repeat-x 100% 100%;
+	padding-bottom: 4px;
+	white-space: nowrap;
+}
+*/
+.form_input {
+	border-color: black;
+	border-width: 2px;
+	font-size: 14px;
+	background-color: #B0E2FF;
+}
+
+.subtitle {
+	font-family: "Papyrus", Times, serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #000;
+}
+.text {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.text_large {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.text_small {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-style: italic;
+}
+.links {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#73ADDB;
+	text-shadow: 2px 2px 2px #000;
+}
+a {
+	color: #BCD2EE
+}
+a:hover {
+	color: #990033;
+}
+.links:rollover {
+	color:#CC0000;
+}
+
+body {
+	background-image: url(images/Waterdroplet.jpg);	
+	background-attachment:fixed;
+	background-size: cover;
+/*	background-size: 100% 100%; */
+/*	background-repeat:no-repeat; */
+}
+
+#menu {
+	position: absolute;
+	height: 50px;
+	width: 800px;
+	top: 20px;
+}
