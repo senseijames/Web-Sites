@@ -1,0 +1,47 @@
+body {
+	background-color:#000023;
+	padding:20;
+	font-family: "Courier New", Courier, monospace;
+	color:#ca981b;
+	font-weight: bold;
+}
+
+.orange_text {
+	color: #b76325;
+}
+
+hr {
+	color: #ca981b;
+	background-color: #ca981b;
+	border-color: #ca981b;
+}
+
+h1 {
+/*
+	font-family: Impact, Charcoal, sans-serif;
+*/
+	font-family: "Courier New", Courier, monospace;	
+	color: #FBDB0C;
+	font-size: 50px;
+	margin-bottom: 0px;
+}
+
+h2, h3 {
+	color: #FBDB0C;
+}
+
+div {
+	width: 900px;
+}
+
+a {
+/*	color: #33A1DE;
+*/
+	color: #FBDB0C;
+	cursor: pointer;
+}
+
+
+.red_text {
+	color: #CD0000;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>MAMBA-Ryu Publications</title>
+	<link href="css/mamba_publications.css" rel="stylesheet" type="text/css">
+</head>
+
+<script type="text/javascript">
+	window.onload = function()
+	{
+		var countdown_text = document.getElementById('countdown_text');
+		var i = 5;
+		var interval_id = setInterval(function(){
+											countdown_text.innerHTML = i;
+											if (--i == 0)
+											{
+												clearInterval(interval_id);
+												window.location = "http://www.amazon.com/author/shodai";
+											}
+										}, 1000);
+	};
+</script>
+
+<body>
+	<div align="center">
+		<h1>MAMBA-Ryu Publications</h1>
+	</div>
+	
+	<br><br>
+	
+	<div align="center" class="red_text">
+	Coming soon!
+	</div>
+	
+	<br><br>
+	
+	<div align="center" class="orange_text">
+	Redirecting to <a href="www.amazon.com/author/shodai">www.amazon.com/author/shodai</a> in <span id="countdown_text">5</span>…
+	</div>
+	
+</body>
+</html>
