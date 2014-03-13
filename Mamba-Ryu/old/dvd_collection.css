@@ -1,0 +1,49 @@
+body {
+	background-image: url(images/snakeskin_superblue.jpg);
+}
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #A7A7A7;
+	font-weight: bold;
+}
+.style2 {font-size: 16px}
+#Layer1 {
+	position:absolute;
+	left:7px;
+	top:330px;
+	width:114px;
+	height:210px;
+	z-index:1;
+}
+.style4 {font-size: 16px; font-weight: bold; }
+a:link {
+	color: #A7A7A7;
+}
+a:visited {
+	color: #41854D;
+}
+a:hover {
+	color: #C40302;
+}
+a:active {
+	color: #DED841;
+}
+#Kaizen_Shell {
+	position:absolute;
+	left:49px;
+	top:347px;
+	width:60px;
+	height:24px;
+	z-index:2;
+}
+#Layer3 {
+	position:absolute;
+	left:10px;
+	top:439px;
+	width:103px;
+	height:68px;
+	z-index:3;
+}
+.style5 {font-size: 14px}
+.style6 {font-size: 18px}

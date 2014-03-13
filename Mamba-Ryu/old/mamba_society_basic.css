@@ -1,0 +1,39 @@
+body,td,th {
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+body {
+	background-image: url(images/snakeskin_other_black.gif);
+	text-align: justify;
+	background-attachment: fixed;
+}
+.smaller_text {font-size: 14px
+}
+a:link {
+	color: #A7A7A7;
+}
+a:visited {
+	color: #41854D;
+}
+.title {
+	font-size: 20px;
+}
+.title_gold {
+	font-size: 20px;
+	color: #FEFF00;
+}
+a:hover {
+	color: #C40302;
+}
+.cardinal {
+	color: #C40302;
+}
+
+a:active {
+	color: #DED841;
+}
+.gold_text {
+	color: #FEFF00;
+}
