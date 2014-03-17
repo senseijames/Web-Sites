@@ -4,7 +4,14 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>MAMBA-Ryu Publications</title>
 	<link href="css/mamba_publications.css" rel="stylesheet" type="text/css">
-	
+	<link href="css/demo-slideshow.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
+    <script src="js/jquery.cycle2.carousel.min.js"></script>
+    <script src="js/jquery.cycle2.flip.min.js"></script>
+    <script src="js/jquery.cycle2.shuffle.min.js"></script>
+    <script src="js/jquery.cycle2.caption2.min.js"></script>
+        
 	<script type="text/javascript">
 		window.onload = function()
 		{
@@ -26,15 +33,57 @@
 		<hr>
 	</div>
 	
-	<div align="center" class="red_text">
-		<a href="books/MandatedReport.html">
-			<img src="images/MandatedReport_front_small.png"/>
-		</a>
+    <!--
+     data-cycle-fx="fadeout"
+     data-cycle-fx="carousel"
+     data-cycle-fx="flipHorz"
+     data-cycle-fx="flipVert"
+     data-cycle-fx="carousel" data-cycle-carousel-visible="1"
+     data-cycle-fx="shuffle"
 
-		<a href="books/PoemasDeUnSennin.html">
-			<img src="images/Poemas.png"/>
-		</a>
-		
+     data-cycle-overlay-fx-out="slideUp"
+     data-cycle-overlay-fx-in="slideDown"
+
+     data-cycle-auto-height="4:3"
+     -->
+	<div align="center" class="red_text">        
+        <div class="cycle-slideshow"
+            data-cycle-timeout=2000
+            
+            data-cycle-fx=carousel data-cycle-carousel-visible="1"
+            data-cycle-carousel-fluid=true
+            
+            data-cycle-caption-plugin=caption2
+            data-cycle-overlay-fx-out="slideUp"
+            data-cycle-overlay-fx-in="slideDown"
+            
+            data-cycle-next="#next"
+            data-cycle-prev="#prev"
+            data-cycle-pager="#pager"
+            >
+            
+            <div class="cycle-overlay"></div>
+            
+            <img height="400" src="images/MandatedReport_front_small.png" data-cycle-title="Mandated Report" data-cycle-desc="Verdict: Justice Denied; America: Guilty As Charged"/>
+            <img height="400" src="images/Poemas.png" data-cycle-title="Poemas de un Sennin" data-cycle-desc="La Coleccion"/>
+            <img height="400" src="images/MandatedReport_front_small.png" data-cycle-title="Mandated Report" data-cycle-desc="Verdict: Justice Denied; America: Guilty As Charged"/>
+            <img height="400" src="images/Poemas.png" data-cycle-title="Poemas de un Sennin" data-cycle-desc="La Coleccion"/>
+            <!--
+            <a href="books/MandatedReport.html">
+                <img src="images/MandatedReport_front_small.png"/>
+            </a>
+
+            <a href="books/PoemasDeUnSennin.html">
+                <img src="images/Poemas.png"/>
+            </a>
+             -->
+		</div>
+        <div>
+            <a href=# id=prev>&lt;&lt; Prev </a>
+            <a href=# id=next> Next &gt;&gt; </a> 
+        </div>
+        <div class="cycle-pager" id=pager></div>
+        
 		<p>Our books are awesome!!</p>
 	</div>
 </body>
