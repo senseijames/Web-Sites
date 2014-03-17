@@ -42,6 +42,13 @@
 .cycle-next { right: 0; background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;}
 .cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
 
+
+#btn_prev, #btn_next {
+    font-size: 40px;
+	text-decoration: none;
+}
+
+
 .disabled { opacity: .5; filter:alpha(opacity=50); }
 
 
