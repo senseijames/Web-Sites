@@ -5,19 +5,13 @@
 	<title>MAMBA-Ryu Publications</title>
 	<link href="css/mamba_publications.css" rel="stylesheet" type="text/css">
 	<link href="css/demo-slideshow.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/jquery.cycle2.min.js"></script>
-    <script src="js/jquery.cycle2.carousel.min.js"></script>
-    <script src="js/jquery.cycle2.flip.min.js"></script>
-    <script src="js/jquery.cycle2.shuffle.min.js"></script>
-    <script src="js/jquery.cycle2.caption2.min.js"></script>
-        
-	<script type="text/javascript">
-		window.onload = function()
-		{
-			// Do some JavaScripting?
-		};
-	</script>
+    <script src="js/lib/jquery-1.11.0.min.js"></script>
+    <script src="js/lib/jquery.cycle2.min.js"></script>
+    <script src="js/lib/jquery.cycle2.carousel.min.js"></script>
+    <script src="js/lib/jquery.cycle2.flip.min.js"></script>
+    <script src="js/lib/jquery.cycle2.shuffle.min.js"></script>
+    <script src="js/lib/jquery.cycle2.caption2.min.js"></script>
+    <script src="js/mamba_publications.js"></script>
 </head>
 
 <body>
@@ -47,27 +41,27 @@
      data-cycle-auto-height="4:3"
      -->
 	<div align="center" class="red_text">        
-        <div class="cycle-slideshow"
-            data-cycle-timeout=2000
+        <div id="slideshow_container" class="cycle-slideshow"
+            data-cycle-timeout="2000"
             
-            data-cycle-fx=carousel data-cycle-carousel-visible="1"
-            data-cycle-carousel-fluid=true
+            data-cycle-fx="carousel" data-cycle-carousel-visible="1"
+            data-cycle-carousel-fluid="true"
             
-            data-cycle-caption-plugin=caption2
+            data-cycle-caption-plugin="caption2"
             data-cycle-overlay-fx-out="slideUp"
             data-cycle-overlay-fx-in="slideDown"
             
-            data-cycle-next="#next"
-            data-cycle-prev="#prev"
+            data-cycle-next="#btn_next"
+            data-cycle-prev="#btn_prev"
             data-cycle-pager="#pager"
             >
             
             <div class="cycle-overlay"></div>
             
-            <img height="400" src="images/MandatedReport_front_small.png" data-cycle-title="Mandated Report" data-cycle-desc="Verdict: Justice Denied; America: Guilty As Charged"/>
-            <img height="400" src="images/Poemas.png" data-cycle-title="Poemas de un Sennin" data-cycle-desc="La Coleccion"/>
-            <img height="400" src="images/MandatedReport_front_small.png" data-cycle-title="Mandated Report" data-cycle-desc="Verdict: Justice Denied; America: Guilty As Charged"/>
-            <img height="400" src="images/Poemas.png" data-cycle-title="Poemas de un Sennin" data-cycle-desc="La Coleccion"/>
+            <img height="400" src="images/MandatedReport_front_small.png" click_target="books/PoemasDeUnSennin.html" data-cycle-title="Mandated Report" data-cycle-desc="Verdict: Justice Denied; America: Guilty As Charged"/>
+            <img height="400" src="images/Poemas.png" click_target="books/PoemasDeUnSennin.html" data-cycle-title="Poemas de un Sennin" data-cycle-desc="La Coleccion"/>
+            <img height="400" src="images/MandatedReport_front_small.png" click_target="books/MandatedReport.html" data-cycle-title="Mandated Report" data-cycle-desc="Verdict: Justice Denied; America: Guilty As Charged"/>
+            <img height="400" src="images/Poemas.png" click_target="books/PoemasDeUnSennin.html" data-cycle-title="Poemas de un Sennin" data-cycle-desc="La Coleccion"/>
             <!--
             <a href="books/MandatedReport.html">
                 <img src="images/MandatedReport_front_small.png"/>
@@ -78,11 +72,12 @@
             </a>
              -->
 		</div>
+        
         <div>
-            <a href=# id=prev>&lt;&lt; Prev </a>
-            <a href=# id=next> Next &gt;&gt; </a> 
+            <a href="#" id="btn_prev">&lt;</a>
+            <a href="#" id="btn_next">&gt;</a> 
         </div>
-        <div class="cycle-pager" id=pager></div>
+        <div class="cycle-pager" id="pager"></div>
         
 		<p>Our books are awesome!!</p>
 	</div>
