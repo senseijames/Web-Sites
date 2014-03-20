@@ -1,0 +1,83 @@
+/*
+  Next and previous buttons
+*/
+#btn_prev, #btn_next {
+  font-size: 40px;
+  text-decoration: none;
+}
+#btn_prev {
+	position :  relative;
+	right :     300px;
+	bottom :    280px;
+}
+#btn_next {
+	position :  relative;
+	left :      300px;
+	bottom :    280px;
+}
+
+/*
+  Carousel page buttons
+*/
+#pager {
+	position :   relative;
+	bottom :     40px;
+	text-align:  center;
+	z-index:     500;
+}
+#pager span { 
+    font-size: 30px;
+    width: 10px; height: 10px; 
+    padding : 10px;
+    color: #ddd;
+    display: inline-block;
+    cursor: pointer;
+}
+#pager span.cycle-pager-active {
+	color: #FBDB0C;
+}
+#pager > * { 
+	cursor: pointer;
+}
+
+
+/*
+  Critical Acclaim
+*/
+.book_comment {
+	position :   absolute;
+	font-size :  40px;
+	z-index :    -1;
+}
+
+.comment_position_0 {
+	left :   50px;
+	top :    200px;
+}
+.comment_position_1 {
+  left :   600px;
+  top :    400px;
+}
+.comment_position_2 {
+  left :   200px;
+  top :    640px;
+}
+
+/*
+  Book Descriptions
+*/
+#book_descriptions {
+	position: relative;
+	top: -25px;
+}
+.book_desc {
+	position: absolute;
+	width: 100%;
+}
+
+/*
+  General
+*/
+.display_none {
+  display: none;
+}

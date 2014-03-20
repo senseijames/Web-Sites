@@ -15,25 +15,6 @@
 }
 
 
-/* overlay */
-.cycle-overlay { 
-    font-family: tahoma, arial;
-    position: absolute; bottom: 0; z-index: 600;
-    background: black; color: white; padding: 15px; opacity: .5;
-    text-align: left;
-}
-
-
-/* pager */
-.cycle-pager { 
-    text-align: center; width: 100%; z-index: 500;
-}
-.cycle-pager span { 
-    font-family: arial; font-size: 50px; width: 16px; height: 16px; 
-    display: inline-block; color: #ddd; cursor: pointer; 
-}
-.cycle-pager span.cycle-pager-active { color: #D69746;}
-.cycle-pager > * { cursor: pointer;}
 
 
 /* prev / next links */
@@ -43,11 +24,11 @@
 .cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
 
 
-#btn_prev, #btn_next {
-    font-size: 40px;
-	text-decoration: none;
+/*
+#slideshow_container {
+    left : 270px;
 }
-
+*/
 
 .disabled { opacity: .5; filter:alpha(opacity=50); }
 

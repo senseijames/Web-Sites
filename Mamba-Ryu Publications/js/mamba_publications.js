@@ -1,11 +1,60 @@
 $(document).ready(function(){
-                  
-  $("#slideshow_container img").click(function(){
-    var click_target = $(this).attr("click_target");
-    if (click_target)
-    {
-      window.location = click_target;
-    }
-  });
+	
+	var BOOK_PAGES = [ "books/MandatedReport.html", "books/PoemasDeUnSennin.html", "books/MandatedReport.html", "books/PoemasDeUnSennin.html"];
+	var BOOK_PAGE_ID_PREFIX_LENGTH 	= 11; // "book_cover_N"
+	var BOOK_DESC_ID_PREFIX 		= "#book_desc_";
+	var BOOK_COMMENT_CLASS_PREFIX   = ".book_comment_";
+	
+	/**
+	 * When a slide image is clicked, determine which page we should nav to based on
+	 * the id, which is an index into the "book_pages" array.
+	 */
+	$("#slideshow img").click(function(){
+		var click_target = get_page_from_image_id ($(this).attr("id"));
+		if (click_target)
+		{
+			window.location = click_target;
+		}
+	});
+	
+	/**
+	 * Left - fix the height growing after resize bug
+	 * why cant  use arrow or delete keys in eclipse anymore? 
+	 * why not displaying images in Safari?  Cross-browser issues suuuck
+	 */
+	
+	
+	function get_page_from_image_id (id)
+	{
+		return BOOK_PAGES [get_book_index (id)];
+	}
+	
+	/**
+	 * Each time a slide transition happens, cross fade the description and comments text.
+	 */
+	$("#slideshow").on ("cycle-before", function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
+		var outgoing_book_index = get_book_index (outgoingSlideEl.id);
+		var incoming_book_index = get_book_index (incomingSlideEl.id);
+		
+		// Cross-fade the description text.
+		$(BOOK_DESC_ID_PREFIX + outgoing_book_index).fadeOut();
+		$(BOOK_DESC_ID_PREFIX + incoming_book_index).fadeIn();
+		
+		// Cross-fade the comment text.
+		$(BOOK_COMMENT_CLASS_PREFIX + outgoing_book_index).fadeOut();
+		$(BOOK_COMMENT_CLASS_PREFIX + incoming_book_index).fadeIn();
+	});
+	
+	function get_book_index (id)
+	{
+		return id.substring (BOOK_PAGE_ID_PREFIX_LENGTH);
+	}
+	
+	
+//	function center_element ($elem)
+//	{
+//		$elem ('left', 0.5 * ($(window).width() - $elem.width()));
+//	}
+	
 
 }); 

@@ -4,19 +4,26 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>MAMBA-Ryu Publications</title>
 	<link href="css/mamba_publications.css" rel="stylesheet" type="text/css">
+	<link href="css/mamba_publications_home.css" rel="stylesheet" type="text/css">
 	<link href="css/demo-slideshow.css" rel="stylesheet" type="text/css">
-    <script src="js/lib/jquery-1.11.0.min.js"></script>
-    <script src="js/lib/jquery.cycle2.min.js"></script>
-    <script src="js/lib/jquery.cycle2.carousel.min.js"></script>
-    <script src="js/lib/jquery.cycle2.flip.min.js"></script>
-    <script src="js/lib/jquery.cycle2.shuffle.min.js"></script>
-    <script src="js/lib/jquery.cycle2.caption2.min.js"></script>
-    <script src="js/mamba_publications.js"></script>
+  
+  <script src="js/lib/jquery-1.11.0.min.js"></script>
+  <script src="js/lib/jquery.cycle2.min.js"></script>
+  <script src="js/lib/jquery.cycle2.carousel.min.js"></script>
+  <!-- 
+  <script src="js/lib/jquery.cycle2.flip.min.js"></script>
+  <script src="js/lib/jquery.cycle2.shuffle.min.js"></script>
+  <script src="js/lib/jquery.cycle2.caption2.min.js"></script>
+   -->
+  <script src="js/mamba_publications.js"></script>
 </head>
 
 <body>
+	
+	<!--  Header -->
 	<div align="center">
 		<h1>MAMBA-Ryu Publications</h1>
+		
 		<p>
 			<a href="index.html">Home</a> |
 			<a href="books/index.html">Titles</a> |
@@ -29,57 +36,75 @@
 	
     <!--
      data-cycle-fx="fadeout"
-     data-cycle-fx="carousel"
      data-cycle-fx="flipHorz"
      data-cycle-fx="flipVert"
      data-cycle-fx="carousel" data-cycle-carousel-visible="1"
-     data-cycle-fx="shuffle"
-
-     data-cycle-overlay-fx-out="slideUp"
-     data-cycle-overlay-fx-in="slideDown"
-
-     data-cycle-auto-height="4:3"
      -->
-	<div align="center" class="red_text">        
-        <div id="slideshow_container" class="cycle-slideshow"
-            data-cycle-timeout="2000"
-            
-            data-cycle-fx="carousel" data-cycle-carousel-visible="1"
-            data-cycle-carousel-fluid="true"
-            
-            data-cycle-caption-plugin="caption2"
-            data-cycle-overlay-fx-out="slideUp"
-            data-cycle-overlay-fx-in="slideDown"
-            
-            data-cycle-next="#btn_next"
-            data-cycle-prev="#btn_prev"
-            data-cycle-pager="#pager"
-            >
-            
-            <div class="cycle-overlay"></div>
-            
-            <img height="400" src="images/MandatedReport_front_small.png" click_target="books/PoemasDeUnSennin.html" data-cycle-title="Mandated Report" data-cycle-desc="Verdict: Justice Denied; America: Guilty As Charged"/>
-            <img height="400" src="images/Poemas.png" click_target="books/PoemasDeUnSennin.html" data-cycle-title="Poemas de un Sennin" data-cycle-desc="La Coleccion"/>
-            <img height="400" src="images/MandatedReport_front_small.png" click_target="books/MandatedReport.html" data-cycle-title="Mandated Report" data-cycle-desc="Verdict: Justice Denied; America: Guilty As Charged"/>
-            <img height="400" src="images/Poemas.png" click_target="books/PoemasDeUnSennin.html" data-cycle-title="Poemas de un Sennin" data-cycle-desc="La Coleccion"/>
-            <!--
-            <a href="books/MandatedReport.html">
-                <img src="images/MandatedReport_front_small.png"/>
-            </a>
-
-            <a href="books/PoemasDeUnSennin.html">
-                <img src="images/Poemas.png"/>
-            </a>
-             -->
+	<div align="center" class="red_text">
+	
+    <div id="slideshow" class="cycle-slideshow"
+      data-cycle-timeout="1000"
+      data-cycle-speed="1000"
+      data-cycle-fx="carousel" data-cycle-carousel-visible="1"
+      data-cycle-next="#btn_next"
+      data-cycle-prev="#btn_prev"
+      data-cycle-pager="#pager"
+      data-cycle-log="false"
+    >
+      <img id="book_cover_0" src="images/MandatedReport_front_small.png" />
+      <img id="book_cover_1" src="images/Poemas.png" />
+      <img id="book_cover_2" src="images/MandatedReport_front_small.png" />
+      <img id="book_cover_3" src="images/Poemas.png" />
+      
 		</div>
-        
-        <div>
-            <a href="#" id="btn_prev">&lt;</a>
-            <a href="#" id="btn_next">&gt;</a> 
-        </div>
-        <div class="cycle-pager" id="pager"></div>
-        
-		<p>Our books are awesome!!</p>
+
+    <!-- Carousel Navigation -->
+    <a href="#" id="btn_prev">&lt;</a>
+    <a href="#" id="btn_next">&gt;</a>
+    <div id="pager" class="cycle-pager"></div>
+    
+    <!-- Book Descriptions -->
+    <div id="book_descriptions">
+			<p id="book_desc_0" class="book_desc">
+			  Mandated Report Volume I: Overview<br>
+			  The chronicle of American injustice begins.
+			</p>
+			<p id="book_desc_1" class="book_desc display_none">
+			  Poemas de un Sennin<br>
+			  La Colección, Parte Uno
+			</p>
+			<p id="book_desc_2" class="book_desc display_none">
+			  Mandated Report Volume I: Overview<br>
+	      The chronicle of American injustice begins.
+			<p id="book_desc_3" class="book_desc display_none">
+			  Poemas de un Sennin<br>
+	      La Colección, Parte Uno
+	    </p>
+    </div>
+		
+		<!-- Critical Acclaim -->
+		<p class="book_comment book_comment_0 comment_position_0">M.R. Acclaim one</p>
+	  <p class="book_comment book_comment_0 comment_position_1">M.R. Acclaim two</p>
+	  <p class="book_comment book_comment_0 comment_position_2">M.R. Acclaim three</p>
+	  
+    <p class="book_comment book_comment_1 comment_position_0 display_none">Poemas Acclaim One</p>
+    <p class="book_comment book_comment_1 comment_position_1 display_none">Poemas Acclaim Two</p>
+    <p class="book_comment book_comment_1 comment_position_2 display_none">Poemas Acclaim Three</p>
+
+    <p class="book_comment book_comment_2 comment_position_0 display_none">M.R. Acclaim One</p>
+    <p class="book_comment book_comment_2 comment_position_1 display_none">M.R. Acclaim Two</p>
+    <p class="book_comment book_comment_2 comment_position_2 display_none">M.R. Acclaim Three</p>
+    
+    <p class="book_comment book_comment_3 comment_position_0 display_none">Poemas Acclaim One</p>
+    <p class="book_comment book_comment_3 comment_position_1 display_none">Poemas Acclaim Two</p>
+    <p class="book_comment book_comment_3 comment_position_2 display_none">Poemas Acclaim Three</p>
+		
 	</div>
+  
+  <br>
+  <br>
+  <br>
+  <br>  
+	
 </body>
 </html>

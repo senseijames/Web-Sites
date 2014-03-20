@@ -14,6 +14,7 @@ hr {
 	color: #ca981b;
 	background-color: #ca981b;
 	border-color: #ca981b;
+	width: 900px;
 }
 
 h1 {
@@ -28,10 +29,6 @@ h1 {
 
 h2, h3 {
 	color: #FBDB0C;
-}
-
-div {
-	width: 900px;
 }
 
 a {
