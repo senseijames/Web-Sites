@@ -45,7 +45,7 @@
     <div id="slideshow" class="cycle-slideshow"
       data-cycle-timeout="1000"
       data-cycle-speed="1000"
-      data-cycle-fx="carousel" data-cycle-carousel-visible="1"
+      data-cycle-fx="fadeout"
       data-cycle-next="#btn_next"
       data-cycle-prev="#btn_prev"
       data-cycle-pager="#pager"
@@ -59,9 +59,9 @@
 		</div>
 
     <!-- Carousel Navigation -->
-    <a href="#" id="btn_prev">&lt;</a>
-    <a href="#" id="btn_next">&gt;</a>
-    <div id="pager" class="cycle-pager"></div>
+    <a href="#" id="btn_prev" data-cycle-cmd="pause">&lt;</a>
+    <a href="#" id="btn_next" data-cycle-cmd="pause">&gt;</a>
+    <div id="pager" class="cycle-pager" data-cycle-cmd="pause"></div>
     
     <!-- Book Descriptions -->
     <div id="book_descriptions">
