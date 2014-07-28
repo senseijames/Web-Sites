@@ -1,51 +1,63 @@
 body {
-	background-color:#000023;
-	padding:20;
-	font-family: "Courier New", Courier, monospace;
-	color:#ca981b;
-	font-weight: bold;
+/*
+  background-color:#000023;
+  */
+  padding:20;
+  font-family: "Courier New", Courier, monospace;
+  color:#ca981b;
+  font-weight: bold;
+  position: relative;
+  top: -80px;
+  background-image:url('../images/bg_tile_temp.png');
+  background-repeat:repeat;
 }
 
 .orange_text {
-	color: #b76325;
+  color: #b76325;
 }
 
 hr {
-	color: #ca981b;
-	background-color: #ca981b;
-	border-color: #ca981b;
-	width: 900px;
+  color: #ca981b;
+  background-color: #ca981b;
+  border-color: #ca981b;
+  width: 900px;
 }
 
-h1 {
+.header {
 /*
-	font-family: Impact, Charcoal, sans-serif;
+  font-family: Impact, Charcoal, sans-serif;
 */
-	font-family: "Courier New", Courier, monospace;	
-	color: #FBDB0C;
-	font-size: 50px;
-	margin-bottom: 0px;
+  font-family: "Courier New", Courier, monospace; 
+  color: #FBDB0C;
+  font-size: 50px;
+  margin-bottom: 0px;
 }
 
 h2, h3 {
-	color: #FBDB0C;
+  color: #FBDB0C;
 }
 
 a {
-/*	color: #33A1DE;
+/*  color: #33A1DE;
 */
-	color: #FBDB0C;
-	cursor: pointer;
+  color: #FBDB0C;
+  cursor: pointer;
 }
 
 .image_link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .block_display {
-	display: block;
+  display: block;
 }
 
 .red_text {
-	color: #CD0000;
+  color: #CD0000;
+}
+
+#logo {
+  position: relative;
+  left: -20px;
+  top: 60px;
 }
