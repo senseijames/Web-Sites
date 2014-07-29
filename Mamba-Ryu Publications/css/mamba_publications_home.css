@@ -63,15 +63,15 @@
 }
 
 .comment_position_0 {
-	left :   60px;
-	top :    270px;
+	left :   90px;
+	top :    310px;
 }
 .comment_position_1 {
   right:   60px;
-  top :    400px;
+  top :    440px;
 }
 .comment_position_2 {
-  left :   160px;
+  left :   50px;
   top :    720px;
 }
 
@@ -81,11 +81,29 @@
 #book_descriptions {
 	position: relative;
 	top: -25px;
+	align: center;
+	width: 600px;
 }
 .book_desc {
 	position: absolute;
-	width: 100%;
+	text-align: left;
+	font-size: 16px;
 }
+.book_desc_title {
+	font-size: 20px;
+	text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/*
+Mission Control
+* * * * * * * * * * *
+1. Color scheme
+2. More quotes littering the place?  Opacity?  Use better color
+   that blends into bg *a little* better.
+*/
+
 
 /*
   General
