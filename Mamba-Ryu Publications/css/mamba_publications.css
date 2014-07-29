@@ -8,8 +8,8 @@ body {
   font-weight: bold;
   position: relative;
   top: -80px;
-  background-image:url('../images/bg_tile_temp.png');
-  background-repeat:repeat;
+  background-image:url('../images/snakeskin_full.jpg');
+  background-size: 100% auto;
 }
 
 .orange_text {
