@@ -55,3 +55,24 @@ a:hover {
   left: -20px;
   top: 60px;
 }
+
+
+/* TODO: Nuke or comment out, as these are unused and purely
+         for development purposes */
+#palette {
+  color: #33A1DE;
+  color: #FBDB0C;
+  color: #575a5d;   /* dark grey */
+  color: #762f92;   /* lighter purple */
+  color: #502063;   /* purple */
+  color: #361643;   /* darker purple */
+}
+
+/*
+.gold_text {
+  color: #ca981b;
+}
+.red_text {
+  color: #CD0000;
+}
+*/
