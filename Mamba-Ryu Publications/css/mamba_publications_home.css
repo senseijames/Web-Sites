@@ -60,6 +60,7 @@
 	position :   absolute;
 	font-size :  40px;
 	z-index :    -1;
+  color:      #999999;
 }
 
 .comment_position_0 {

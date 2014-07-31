@@ -4,11 +4,11 @@ body {
   */
   padding:20;
   font-family: "Courier New", Courier, monospace;
-  color:#ca981b;
+  color:#000000;
   font-weight: bold;
   position: relative;
-  top: -80px;
-  background-image:url('../images/snakeskin_full.jpg');
+  top: -95px;
+  background-image:url('../images/snakeskin_full_gradient.jpg');
   background-size: 100% auto;
 }
 
@@ -17,9 +17,7 @@ body {
 }
 
 hr {
-  color: #ca981b;
-  background-color: #ca981b;
-  border-color: #ca981b;
+  border-color: #762f92;
   width: 900px;
 }
 
@@ -28,7 +26,6 @@ hr {
   font-family: Impact, Charcoal, sans-serif;
 */
   font-family: "Courier New", Courier, monospace; 
-  color: #FBDB0C;
   font-size: 50px;
   margin-bottom: 0px;
 }
@@ -38,10 +35,11 @@ h2, h3 {
 }
 
 a {
-/*  color: #33A1DE;
-*/
-  color: #FBDB0C;
+  color: #762f92;
   cursor: pointer;
+}
+a:hover {
+	color: #000000;
 }
 
 .image_link {
@@ -50,10 +48,6 @@ a {
 
 .block_display {
   display: block;
-}
-
-.red_text {
-  color: #CD0000;
 }
 
 #logo {
