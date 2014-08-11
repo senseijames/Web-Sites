@@ -1,0 +1,20 @@
+#book_title
+{
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+#main_content
+{
+	width: 900px;
+}
+
+.cover_image
+{
+	 padding:  15px;
+}
+
+.center_align
+{
+	 text-align: center;
+}

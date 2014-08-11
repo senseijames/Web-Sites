@@ -1,0 +1,16 @@
+#main_table
+{
+	width: 900px;
+  border-collapse: collapse;
+}
+
+#main_table tr > td
+{
+	padding: 15px;
+	border: 1px solid black;
+}
+
+#main_table tr > td img
+{
+	width: 300px;
+}
