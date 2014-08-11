@@ -1,0 +1,24 @@
+/*
+
+Mission Control
+* * * * * * * * * * *
+1. After HR, maybe a description of what MAMBA Ryu is, and what
+   the Press is?
+2. More something - home page needs more something.  But what?
+3. Consider adding tooltips for comment text:
+   - http://www.webdesignerdepot.com/2012/11/how-to-create-a-simple-css3-tooltip/
+   - http://stackoverflow.com/questions/17391194/tooltip-with-html-content-without-javascript
+   
+   
+1. Masters of the Art of Mind-Body in Action
+   MAMBA-Ryu Publications intend to disseminate knowledge about
+   the... (cop from Maestros Kaizen)
+2. Change font on the title text (see what appears in the books)
+   Provide 2nd, 3rd fallback font options - ultimate fallback
+   is current font.
+   Maybe try a png?  Hard to get anti-aliasing right though, no?
+3. Input descriptions for each book
+4. Ask Pops for help w/ descriptions and acclaim
+5. Add 'About MAMBA-Ryu' main link
+
+*/
