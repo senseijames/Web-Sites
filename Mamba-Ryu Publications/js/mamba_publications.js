@@ -1,6 +1,16 @@
 $(document).ready(function(){
 	
-	var BOOK_PAGES = [ "books/MandatedReport.html", "books/PoemasDeUnSennin.html", "books/MandatedReport.html", "books/PoemasDeUnSennin.html"];
+	var BOOK_PAGES = [ "books/MandatedReport.html",
+	                   "books/PoemasDeUnSennin.html",
+	                   "books/DonJuan.html",
+	                   "books/JulioWolf.html",
+	                   "books/CapitanWolf.html",
+	                   "books/LoQueTengoQueDecir.html",
+	                   "books/MaestrosKaizen.html",
+	                   "books/LaBitacora.html",
+	                   "books/Miakoda.html",
+	                   "books/Omayok.html",
+	                   "books/Penuel.html" ];
 	var BOOK_PAGE_ID_PREFIX_LENGTH 	= 11; // "book_cover_N"
 	var BOOK_DESC_ID_PREFIX 		= "#book_desc_";
 	var BOOK_COMMENT_CLASS_PREFIX   = ".book_comment_";
@@ -35,8 +45,11 @@ $(document).ready(function(){
 		$(BOOK_DESC_ID_PREFIX + incoming_book_index).fadeIn();
 		
 		// Cross-fade the comment text.
+/*
+ * TODO: Re-enable when the time comes.
 		$(BOOK_COMMENT_CLASS_PREFIX + outgoing_book_index).fadeOut();
 		$(BOOK_COMMENT_CLASS_PREFIX + incoming_book_index).fadeIn();
+*/
 	});
 	
 	
