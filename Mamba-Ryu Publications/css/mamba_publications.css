@@ -21,17 +21,14 @@ hr {
   width: 900px;
 }
 
-.header {
+#site_title {
 /*
   font-family: Impact, Charcoal, sans-serif;
 */
-  font-family: "Courier New", Courier, monospace; 
+  font-family: "Segoe Script","Courier New", Courier, monospace; 
   font-size: 50px;
-  margin-bottom: 0px;
-}
-
-h2, h3 {
-  color: #FBDB0C;
+  margin-bottom: -15px;
+  /* TODO: If the end system doesn't have Segoe Script, margin should be 0px */
 }
 
 a {
@@ -56,12 +53,21 @@ a:hover {
   top: 60px;
 }
 
+.left_align
+{
+   text-align: left;
+}
+
+.content
+{
+  width: 900px;
+}
 
 /* TODO: Nuke or comment out, as these are unused and purely
          for development purposes */
 #palette {
   color: #33A1DE;
-  color: #FBDB0C;
+  color: #FBDB0C;   /* auburn yellow */
   color: #575a5d;   /* dark grey */
   color: #762f92;   /* lighter purple */
   color: #502063;   /* purple */
