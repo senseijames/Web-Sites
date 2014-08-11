@@ -22,3 +22,19 @@ Mission Control
 5. Add 'About MAMBA-Ryu' main link
 
 */
+
+
+/*
+1. chop images for each page, 400 wide front cover and back cover
+2. use the front cover, sized to 300 wide to advantage browser caching
+3. make a grid for the "titles" page
+4. make each of the individual pages, populate with front cover at
+   top left, add placeholder text ("If"), and populate with back cover at
+   lower right.  Ping Gustavo-Sempai for crtical acclaim content!
+5. Remove "links" for now
+6. About the Author - link out to Amazon page for now
+7. Sobre MAMBA Ryu - use o old site, perchance, to get something out
+   there.  Will need to talk to Pops or Gustavo about how relevant
+   that content still is.
+8. DONE!
+*/
