@@ -10,7 +10,7 @@
 	border: 1px solid black;
 }
 
-#main_table tr > td img
+#main_table tr > td > a > img
 {
 	width: 300px;
 }
