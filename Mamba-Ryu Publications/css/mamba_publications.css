@@ -10,6 +10,7 @@ body {
   top: -95px;
   background-image:url('../images/snakeskin_full_gradient.jpg');
   background-size: 100% auto;
+  background-attachment: fixed;
 }
 
 .orange_text {
@@ -63,6 +64,11 @@ a:hover {
   width: 900px;
 }
 
+.underline
+{
+	text-decoration: underline;
+}
+
 /* TODO: Nuke or comment out, as these are unused and purely
          for development purposes */
 #palette {
@@ -73,6 +79,7 @@ a:hover {
   color: #502063;   /* purple */
   color: #361643;   /* darker purple */
 }
+
 
 /*
 .gold_text {
