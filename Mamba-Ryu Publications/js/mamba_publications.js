@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	
-	var BOOK_PAGES = [ "books/MandatedReport.html",
+	var BOOK_PAGES = [ "books/MaestrosKaizen.html",
+	                   "books/MandatedReport.html",
 	                   "books/PoemasDeUnSennin.html",
 	                   "books/DonJuan.html",
 	                   "books/JulioWolf.html",
 	                   "books/CapitanWolf.html",
 	                   "books/LoQueTengoQueDecir.html",
-	                   "books/MaestrosKaizen.html",
 	                   "books/LaBitacora.html",
 	                   "books/Miakoda.html",
 	                   "books/Omayok.html",
