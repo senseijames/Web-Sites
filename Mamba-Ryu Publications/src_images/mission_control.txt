@@ -1,15 +1,25 @@
 /*
 
+From Gustavo-Sempai - Videos to incorporate
+* * * * * * * * * * * * * * * * * * * * * * * *
+- This is a video which offers the introduction to one of the evolved programs called : Mente e Identidad del Guerrero Iluminado 
+  http://menteidentidaddelguerreroiluminado.blogspot.mx/2011/05/introduccion-al-programa-mente-e.html
+- Jimmy sensei, I do not known if you want to add as a part of a whole a link about hypnosis and chamanism, 
+  in this link the reader can get a brief information about both plus a 80 minute video with Mayra sempai and
+  her hypno-chamanic trance :) http://artesmentalesdelsennin.blogspot.mx/
+- This blog might contain some good information about the founder, it provides the curriculum and information about programs 
+  of mind control, MAMBA Mindfulness, a little 10 minutes video introduction about the progam in general 
+  http://mentedelguerrero.blogspot.mx/search?updated-min=2009-01-01T00%3A00%3A00-08%3A00&updated-max=2010-01-01T00%3A00%3A00-08%3A00&max-results=1
+
+
 Mission Control
 * * * * * * * * * * *
 Finaling plan:
-1. Titulos
-    - update each book with new description - choose either a review or an excerpt - up to you.
-    - note which ones still need content (also check which books don't have them on their page yet - 
-      will want to get at El Circulo for content
-2. PDF sample files for each book
-3. Links
-    - add based on respones from El Circulo
+1. incorporate gustavo sempai's comments re. youtube intros, where appropriate
+2. PDF sample files for each book, and fix links
+   (No more than 30 pages if it is a long book, but for others no more than 20. I would say no more than 10-15% of the book.)
+3. post to github and online, and solicit feedback again
+4. request specific commentaries for those books - maybe put de la obra as placeholder for now?
 5. DONE!
 
 
