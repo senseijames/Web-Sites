@@ -1,4 +1,8 @@
 /*
+1. Links page - add bg images that scroll with the content - like an thin, intermediate bg.  Seemingly random images, but they light up on mouseover of
+   their relevant link.
+2. get at Amazon re. why the author page isn't showing all of our works, damnit! 
+
 
 From Gustavo-Sempai - Videos to incorporate
 * * * * * * * * * * * * * * * * * * * * * * * *
