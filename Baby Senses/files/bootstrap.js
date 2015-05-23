@@ -15,7 +15,7 @@ function check_browser ()
 {
   if (is_user_mobile())
   {
-    window.location = '../mobile.BabySenses.html';
+    window.location = 'mobile.BabySenses.html';
   }
 }
 
