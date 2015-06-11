@@ -537,7 +537,7 @@ i.breakline {
 				height: 14px;
 				top: 20px;
 				left: 14px;
-				background: url(images/ui.png) no-repeat -62px -60px;
+				background: url(../images/ui.png) no-repeat -62px -60px;
 				}
 			.visible-description #detailButton .btn-text {
 				top: 17px;
@@ -1521,7 +1521,7 @@ i.breakline {
 			
 				
 .social-buttons a {
-    background: url("images/fsocial.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/fsocial.png") no-repeat scroll 0 0 transparent;
     float: left;
     height: 43px;
     position: relative;
