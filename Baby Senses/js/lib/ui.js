@@ -1301,7 +1301,7 @@ UI.initWorkspace = function(object, minWidth, minHeight, time, states, isMobile,
                             that.addClass(envelope, 'envelope');
                             that.addClass(pagerItems[i], 'isLast');
                             // конверт
-                            buildSvg(envelope, 0, 0, 17.929, 17.357, 0, 0, 0.75, "#B2B9BB", false, [{
+                            buildSvg(envelope, 0, 0, 17.929, 17.357, 30, 30, 0.75, "#B2B9BB", false, [{
                                 frames: "M2,17.107c-0.965,0-1.75-0.785-1.75-1.75V8.152l8.555,5.387h0.146l0.134-0.04L17.679,7.9v7.458c0,0.965-0.785,1.75-1.75,1.75H2z M0.347,5.818C0.584,5.111,1.242,4.63,2,4.63h13.929c0.657,0,1.26,0.379,1.555,0.96l-8.742,5.75L0.347,5.818z",
                                 color: "#B2B9BB",
                                 colorHover: "#1AA6DF",
