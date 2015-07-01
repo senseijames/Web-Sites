@@ -39,14 +39,18 @@
 	}
 .formSent .menu {
 	opacity:0;
-	}
-	UL.menu LI {
+}
+
+
+
+/* TODO: Deleted: margin-left: 18px; */
+UL.menu LI {
 		position: relative;
 		font-size: 14px;
-		margin-left: 18px;
 		display: inline-block;
 		vertical-align: top;
-		}
+}
+
 		.jsVisualButton {
 			cursor: pointer;
 			display: block;
@@ -552,9 +556,6 @@ i.breakline {
 
 		/* Content entries and icons for them */
 		.entries {
-			position: static;
-			/*position: relative;*/
-			/*width: 1300px;*/
 			width: 100%;
 			margin: 25px 0 0;
 			padding: 0;
@@ -1900,7 +1901,6 @@ LI.leaf {
 		top: -40px;
 		}
 }
-
 
 
 /* Landscape */

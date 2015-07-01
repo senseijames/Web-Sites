@@ -1,0 +1,834 @@
+/**
+* Responsive Layout Styles
+* * * * * * * * * * * * * * *
+* Establishes layout tiers based on the browser size, thereby accommodating
+* mobile / tablets of varying specs (i.e. resolutions and pixel density).
+* Notice that layout tier ordering is from largest -> smallest screen sizes; as
+* the last defined style laughs loudest, this gives override priority to smaller
+* screen sizes (as one might expect).
+*
+* Note that our goal is responsive layout from unbounded (e.g. desktop) down to a
+* minimum dimensions of 320 x 480 - those of the iPhone 3 & 4 and small enough to
+* fit almost every smart phone on the market.
+* At each size step I call out where something of interest happens (e.g. on-screen
+* elements colliding).
+*
+* This file is meant to be included last (of all CSS files) so that it's styles take priority.
+*
+* @author James Overton V
+*/
+
+
+/**
+ * Styles that help create a responsive layout - I set them here for visibility, and to avoid the tedium
+ * cleanup elsewhere.
+ */
+
+/* Move the footer above the header and body content, so that it doesn't risk occlusion. */
+.footer {
+    z-index: 30;
+}
+
+#header {
+    height: 131px;
+}
+.menu {
+    position: absolute;
+    right: 30px;
+}
+
+.secondLineIntraLink {
+    margin-top: 10px;
+}
+
+/* Give our iframe popups styles (removing the inline attributes) so that we can adjust their dimensions with media queries */
+.booking_iframe {
+    width: 1000px;
+    height: 500px;
+}
+.map_iframe {
+    width: 700px;
+    height: 500px;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Width management
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/* At < 1200px, make sure the right nav arrow doesn't overlap the main text
+   At < 960px, make sure the main text isn't cutoff on the right */
+@media screen and (max-width: 1200px)
+{
+    #workspace {
+        background-color : #00ffff;
+    }
+
+    #arrowRightContainer {
+        right : 0px;
+    }
+    #arrowLeftContainer {
+        left: 0px;
+    }
+
+    .jsRealSwipeElement {
+        right: 30px;
+    }
+}
+
+/* At ~1060px, the booking popup no longer fits on screen; so resize it! */
+@media screen and (max-width: 1060px)
+{
+    #workspace {
+        background-color : #00ff00;
+    }
+
+    .booking_iframe {
+        width: 900px;
+    }
+}
+
+/* At 1030px, the right nav arrow starts to overlap the main text.
+   When we move the text left to compensate, it overlaps the bg graphic.
+   So we add a semi-transparent white bg to the content text,
+   and make sure the header (logo, booking) appears at a higher z-index than the content text's new bg.
+   TODO: Consider adding some padding to the text / bg, so the bg image doesn't come too close to it. */
+@media screen and (max-width: 1030px)
+{
+    #workspace {
+        background-color: #ffff00;
+    }
+
+    .jsRealSwipeElement {
+        right: 50px;
+    }
+
+    /* .jsContentNodeText */
+    #currentContent,
+    #address_paragraph {
+        background-color: rgba(255, 255, 255, .75);
+    }
+
+    /* We don't want to give forms a bg, because they already have one!  But the*/
+    #currentContent.isForm {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+
+    /* Note that the content (which we are specifically trying to overlay!) appears at ~ z-index 10 */
+    #booking_button {
+        z-index: 20;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    #workspace {
+        background-color: #ff00ff;
+    }
+}
+
+@media screen and (max-width: 970px)
+{
+    #workspace {
+        background-color: #00ff00;
+    }
+
+    .jsRealSwipeElement {
+        right: 70px;
+    }
+
+    /* Becomes aesthetically 'necessary' at ~ 960px */
+    .booking_iframe {
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 930px)
+{
+    #workspace {
+        background-color: #0000ff;
+    }
+
+    .jsRealSwipeElement {
+        right: 90px;
+    }
+
+    /* Becomes aesthetically 'necessary' at ~ 910px */
+    .booking_iframe {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 875px)
+{
+    #workspace {
+        background-color: #ffff00;
+    }
+
+    .jsRealSwipeElement {
+        right: 110px;
+    }
+
+
+
+    /* Regularly ~400px wide, no margin */
+    #address_paragraph {
+        margin-left: 10px;
+        width: 390px;
+    }
+
+    /* Note this is regularly at -30px with "position: relative". */
+    #promoForm {
+        left: -40px;
+    }
+
+
+    /* Becomes aesthetically 'necessary' at ~ 860px */
+    .booking_iframe {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 825px)
+{
+    #workspace {
+        background-color: #00ff00;
+    }
+
+    .jsRealSwipeElement {
+        right: 130px;
+    }
+
+
+    #address_paragraph {
+        margin-left: 40px;
+        width: 340px;
+    }
+    #promoForm {
+        left: -40px;
+    }
+}
+
+@media screen and (max-width: 810px)
+{
+    .booking_iframe {
+        width: 700px;
+    }
+}
+
+/* Note that media queries don't adjust for landscape!  DAMN!!!! */
+@media screen and (max-width: 775px)
+{
+    #workspace {
+        background-color: #ff00ff;
+    }
+
+    .jsRealSwipeElement {
+        right: 150px;
+    }
+
+
+    #address_paragraph {
+        margin-left: 60px;
+        width: 300px;
+    }
+    #promoForm {
+        left: -60px;
+    }
+}
+
+@media screen and (max-width: 730px)
+{
+    #workspace {
+        background-color: #ffff00;
+    }
+
+    .jsRealSwipeElement {
+        right: 170px;
+    }
+
+    #address_paragraph {
+        margin-left: 80px;
+        width: 260px;
+    }
+    #promoForm {
+        left: -80px;
+    }
+}
+
+@media screen and (max-width: 685px)
+{
+    #workspace {
+        background-color: #00ff00;
+    }
+
+    .jsRealSwipeElement {
+        right: 190px;
+    }
+
+    #address_paragraph {
+        margin-left: 105px;
+        width: 220px;
+    }
+    #promoForm {
+        left: -100px;
+    }
+}
+
+@media screen and (max-width: 640px)
+{
+    #workspace {
+        background-color: #0000ff;
+    }
+
+    .jsRealSwipeElement {
+        right: 210px;
+    }
+
+    #address_paragraph {
+        margin-left: 130px;
+        width: 200px;
+    }
+    #promoForm {
+        left: -90px;
+    }
+}
+
+/* The main content text has width 400px.  Once we get to this size tier, the fact that the
+   content text is right-aligned starts to look odd; so we center the text within the browser.
+*/
+@media screen and (max-width: 590px)
+{
+    #workspace {
+        background-color: #ff0000;
+    }
+
+    /* Center the main content text horizontally within the browser */
+    .jsRealSwipeElement {
+        right: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+
+    #address_paragraph {
+        margin-left: 150px;
+        width: 200px;
+    }
+    #promoForm {
+        transform : scaleX(0.9) scaleY(0.9);
+        transform-origin: top left;
+    }
+}
+
+/* NOTE! Layout breaks here - especially vertically!! */
+/* At ~555px, the header logo and nav will no longer fit on one line, breaking the header
+   layout onto two lines, which is displeasing; so we resize the header elements to something
+   more appropriate to the smaller screen size. */
+/* At 500px the header elems (scaled to 80% full size) collide, again breaking them onto two lines */
+@media screen and (max-width: 555px)
+{
+    #workspace {
+        background-color: #ffffff;
+    }
+
+    /* Note that the transform only affects the visual output;
+       we must also set the width for the sake of layout / collisions. */
+    #logo {
+        transform: scaleX(0.8) scaleY(0.8);
+        transform-origin: top left;
+        width: 216px;
+    }
+
+    .menu {
+        transform: scaleX(0.8) scaleY(0.8);
+        transform-origin: top right;
+        padding: 0 0 0 0;
+    }
+
+    #address_paragraph {
+        margin-left: 170px;
+        width: 180px;
+    }
+    #promoForm {
+        transform : scaleX(0.8) scaleY(0.8);
+    }
+}
+
+/* At 530px the footer elems start to overlap;
+   move the footer nav buttons up, out of the way of the content on the right and left sides. */
+@media screen and (max-width: 530px)
+{
+    #jsPager {
+        top: -50px;
+    }
+
+    /* ul.entries.entriessetipad */
+    .entries {
+        transform: scaleX(0.9) scaleY(0.9);
+        transform-origin: top left;
+    }
+
+    /*
+    .secondLineIntraLink {
+        margin-top: 0px;
+    }
+    */
+}
+
+@media screen and (max-width: 510px)
+{
+    /* Not sure whey the margin jump is necessary? */
+    #address_paragraph {
+        margin-left: 190px;
+        width: 160px;
+        top: 30px;
+    }
+}
+
+/* At 500px wide the prev/next nav arrows start to overlap the text content;
+   can just hide them at this screen size; boom boom. */
+@media screen and (max-width: 500px)
+{
+    #workspace {
+        background-color: #cdcdcd;
+    }
+
+    #arrowRightContainer {
+        display: none;
+    }
+
+    #arrowLeftContainer {
+        display: none;
+    }
+}
+
+/* At 487px, the header elems break onto two lines again; reduce the header padding
+   (30 - 20px each side) a little to gain us some time (20px, to be exact) */
+@media screen and (max-width: 488px)
+{
+    #workspace {
+        background-color: #00ff00;
+    }
+
+    .header
+    {
+        padding: 0 20px;
+    }
+
+    .menu {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 468px)
+{
+    #workspace {
+        background-color: #00ffff;
+    }
+
+    .header
+    {
+        padding: 0 15px;
+    }
+
+    .menu {
+        right: 10px;
+    }
+
+
+    #address_paragraph {
+        margin-left: 210px;
+        width: 140px;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 430px)
+{
+    /* Margin jump necessary again. */
+    #address_paragraph {
+        margin-left: 220px;
+        width: 130px;
+        top: 0px;
+    }
+    #promoForm {
+        transform : scaleX(0.75) scaleY(0.75);
+        left: -70px;
+    }
+}
+
+@media screen and (max-width: 415px)
+{
+    #address_paragraph {
+        margin-left: 240px;
+    }
+    /* The border surrounding the map view */
+    .cotact-pars.cotact-parsset
+    {
+        margin: 20px;
+    }
+}
+
+/* At ~420px, the content text will no longer fit horizontally (410px cutoff might look better);
+   scale the content text to the screen size. */
+@media screen and (max-width: 420px)
+{
+    #workspace {
+        background-color: #ff0000;
+    }
+
+    #logo {
+        transform: scaleX(0.75) scaleY(0.75);
+        width: 202px;
+    }
+
+    .menu {
+        transform: scaleX(0.75) scaleY(0.75);
+    }
+
+    /* The content text is normally sized to 30% width; but at the current (mobile phone!)
+       screen size, we need to bump that closer to full screen. */
+    .content-node-text {
+        min-width: 295px;
+        width: 95%;
+        left: 60%;
+    }
+}
+
+/* At ~ 403px the header breaks onto two lines again;
+   we can inch forward by further scaling down the header elems. */
+@media screen and (max-width: 405px)
+{
+    #workspace {
+    background-color: #00ff00;
+    }
+
+    .header
+    {
+        padding: 0 10px;
+    }
+
+    #logo {
+        transform: scaleX(0.7) scaleY(0.7);
+        width: 189px;
+    }
+
+    .menu {
+        transform: scaleX(0.7) scaleY(0.7);
+    }
+
+    .content-node-text {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 395px)
+{
+    #workspace {
+        background-color: #ffff00;
+    }
+
+    .content-node-text {
+        width: 89%;
+    }
+
+    /*
+    .entries {
+        transform: scaleX(0.95) scaleY(0.95);
+        transform-origin: top left;
+    }
+    */
+}
+
+/* At ~ 366px, the header layout breaks again.
+   Further scale down the header logos so that they still look good at our
+   target minimum of 320px. */
+@media screen and (max-width: 385px)
+{
+    #workspace {
+        background-color: #ff0000;
+    }
+
+    .content-node-text {
+        width: 87%;
+    }
+
+    /* Crafty way to move intra-page links down without using their margin (inlined) or position (unavailable!) */
+    .entries {
+        transform-origin: left;
+    }
+
+    #address_paragraph {
+        margin-left: 260px;
+    }
+    /* The border surrounding the map view */
+    .cotact-pars.cotact-parsset
+    {
+        margin: 10px;
+    }
+    #promoForm
+    {
+        left: -50px;
+    }
+}
+
+@media screen and (max-width: 375px)
+{
+    #workspace {
+        background-color: #00ff00;
+    }
+
+    .content-node-text {
+        width: 85%;
+    }
+
+    #logo {
+        transform: scaleX(0.65) scaleY(0.65);
+        width: 175px;
+    }
+
+    .menu {
+        transform: scaleX(0.65) scaleY(0.65);
+    }
+}
+
+@media screen and (max-width: 360px)
+{
+    #workspace {
+        background-color: #ffff00;
+    }
+
+    .content-node-text {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 353px)
+{
+    #workspace {
+        background-color: #00ff00;
+    }
+
+    .content-node-text {
+        width: 82%;
+    }
+}
+
+@media screen and (max-width: 340px)
+{
+    #workspace {
+        background-color: #ffffff;
+    }
+
+    .content-node-text {
+        width: 80%;
+    }
+
+    #logo {
+        transform: scaleX(0.62) scaleY(0.62);
+        width: 167px;
+    }
+
+    .menu {
+        transform: scaleX(0.62) scaleY(0.62);
+    }
+}
+
+@media screen and (max-width: 330px)
+{
+    .content-node-text {
+        width: 78%;
+    }
+
+    /* Crafty way to move intra-page links down without using their margin (inlined) or position (unavailable!) */
+    .entries {
+        transform-origin: bottom left;
+    }
+
+
+    #address_paragraph {
+        margin-left: 270px;
+    }
+    /* The border surrounding the map view */
+    .cotact-pars.cotact-parsset
+    {
+        margin: 5px;
+    }
+    #promoForm
+    {
+        left: -40px;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .content-node-text {
+        width: 76%;
+    }
+}
+
+/* This holds out until about 299px, at which point the header elems break onto two lines again. */
+@media screen and (max-width: 313px)
+{
+    #workspace {
+        background-color: #ff0000;
+    }
+
+    #logo {
+        transform: scaleX(0.6) scaleY(0.6);
+        width: 162px;
+    }
+
+    .menu {
+        transform: scaleX(0.6) scaleY(0.6);
+    }
+
+    .content-node-text {
+        width: 70%;
+    }
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Height management
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* TODO: 'pricing and booking' link: .menu { margin-top: 31px }; may need to shift this up so it remains visible on contact page.
+
+/* At ~688px, the footer nav buttons start to collide with the contact us 'address' content;
+   trim some vertical fat off the latter to make room. */
+@media screen and (max-height: 688px)
+{
+    #promoFormAddress > br {
+        display: block;
+        margin-top: -10px;
+        content: " ";
+    }
+
+    #promoFormContentContainer
+    {
+        padding: 20px;
+    }
+    /* Reducing the padding makes the 'view larger map' text look like its doubling because there are two (now misaligned) links;
+       align them! */
+    .large_map_link {
+        padding-left: 10px;
+    }
+}
+
+/* NOTE: ~616px height is where the scrollbar seems to appear.
+*/
+
+@media screen and (max-height: 580px)
+{
+    .booking_iframe {
+        height: 450px;
+    }
+
+
+    .map_iframe {
+        height: 450px;
+    }
+
+    /*
+    .menu {
+        margin-top: -61px;
+    }
+    */
+}
+
+@media screen and (max-height: 530px)
+{
+    .booking_iframe {
+        height: 400px;
+    }
+}
+
+@media screen and (max-height: 515px) {
+    .map_iframe {
+        height: 400px;
+    }
+}
+
+@media screen and (max-height: 480px)
+{
+    .booking_iframe {
+        height: 350px;
+    }
+}
+
+@media screen and (max-height: 470px) {
+    .map_iframe {
+        height: 375px;
+    }
+}
+
+@media screen and (max-height: 440px) {
+    .map_iframe {
+        height: 350px;
+    }
+}
+
+@media screen and (max-height: 430px)
+{
+    .booking_iframe {
+        height: 300px;
+    }
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * iPad hacks
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* Portrait */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    #workspace {
+        background-color: #a0f0f0;
+    }
+
+    #address_paragraph {
+        margin-left: 100px;
+        width: 280px;
+    }
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    #workspace {
+        background-color: #F0C020;
+    }
+
+    #address_paragraph {
+        margin-left: 130px;
+        width: 250px;
+    }
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Environment overrides!
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* TODO: Can enable this here as a quick 'in-development -> production prototype' switch */
+/* TODO: Remove all background-color sets on the workspace - they're for dev only! */
+#workspace {
+    background-color: #ffffff;
+}

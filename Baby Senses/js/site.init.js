@@ -3,13 +3,13 @@ $(function(){
 
   // HTML for content
   $('.html_popup').popup({
-    content		: '<iframe src="https://clients.mindbodyonline.com/classic/home?studioid=221095"  style="width: 1000px; height: 500px;">&nbsp;</iframe><span class="extrabtm">Please call us at +971.4.5587307 if you have any questions or would rather book by phone.</span>',
+    content		: '<iframe class="booking_iframe" src="https://clients.mindbodyonline.com/classic/home?studioid=221095">&nbsp;</iframe><span class="extrabtm">Please call us at +971.4.5587307 if you have any questions or would rather book by phone.</span>',
     type		: 'html'
   });
 
   // HTML for content
-  $('.large_map').popup({
-    content		: '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3614.146360237994!2d55.138214!3d25.063028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6cb34863c837%3A0xf43838fff44265ad!2sBaby+Senses+Mother+Child+Centre+DMCC!5e0!3m2!1sen!2sus!4v1427455496733"  style="width:700px; height: 500px;">&nbsp;</iframe>',
+  $('.large_map_link').popup({
+    content		: '<iframe class="map_iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3614.146360237994!2d55.138214!3d25.063028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6cb34863c837%3A0xf43838fff44265ad!2sBaby+Senses+Mother+Child+Centre+DMCC!5e0!3m2!1sen!2sus!4v1427455496733">&nbsp;</iframe>',
     type		: 'html'
   });
 
