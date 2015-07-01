@@ -18,6 +18,9 @@
 	 *
 	 * @param  {Object} settings
 	 * @return {Object}
+	 *
+	 * @edit - added bindings for "touchend.popup" everywhere "click.popup" is listened for,
+	 *         as it adds mobile support!  (Sensei James)
 	 */
 	$.fn.popup = function(settings){
 
@@ -25,7 +28,7 @@
 			popup = new $.Popup(settings);
 
 		$(document)
-			.on('click.popup', selector, function(e){
+			.on('click.popup touchend.popup', selector, function(e){
 
 				var content = settings && settings.content
 					? settings.content
@@ -290,7 +293,7 @@
 				// If modal isn't specified, bind click event
 				if( !p.o.modal ){
 
-					$back.one('click.popup', function(){
+					$back.one('click.popup touchend.popup', function(){
 						p.close();
 					});
 
