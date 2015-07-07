@@ -24,6 +24,11 @@
  * of cleanup elsewhere.
  */
 
+/* Give all the inner body content a non-inline style, so we can override it here! */
+.content-node-text {
+    width: 408px;
+}
+
 /* Move the footer above the header and body content, so that it doesn't risk occlusion. */
 .footer {
     z-index: 30;
