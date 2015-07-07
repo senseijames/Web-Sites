@@ -21,7 +21,7 @@
 
 /**
  * Styles that help create a responsive layout - I set them here for visibility, and to avoid the tedium
- * cleanup elsewhere.
+ * of cleanup elsewhere.
  */
 
 /* Move the footer above the header and body content, so that it doesn't risk occlusion. */
@@ -49,6 +49,20 @@
 .map_iframe {
     width: 700px;
     height: 500px;
+}
+
+/* Note that the content (which we are specifically trying to overlay!) appears at ~ z-index 10 */
+#booking_button {
+    z-index: 20;
+}
+
+#booking_button > .big_screen_link,
+.big_screen_link {
+    display: inline-block;
+}
+#booking_button > .small_screen_link,
+.small_screen_link {
+    display: none;
 }
 
 
@@ -93,7 +107,8 @@
 /* At 1030px, the right nav arrow starts to overlap the main text.
    When we move the text left to compensate, it overlaps the bg graphic.
    So we add a semi-transparent white bg to the content text,
-   and make sure the header (logo, booking) appears at a higher z-index than the content text's new bg.
+   and make sure the header (logo, booking) appears at a higher z-index than the content text's new bg
+   (already taken care of via #booking_button style above).
    TODO: Consider adding some padding to the text / bg, so the bg image doesn't come too close to it. */
 @media screen and (max-width: 1030px)
 {
@@ -111,15 +126,13 @@
         background-color: rgba(255, 255, 255, .75);
     }
 
+    #address_paragraph {
+        padding-top: 10px;
+    }
+
     /* We don't want to give forms a bg, because they already have one!  But the*/
     #currentContent.isForm {
         background-color: rgba(255, 255, 255, 0);
-    }
-
-
-    /* Note that the content (which we are specifically trying to overlay!) appears at ~ z-index 10 */
-    #booking_button {
-        z-index: 20;
     }
 }
 
@@ -162,6 +175,7 @@
     }
 }
 
+
 @media screen and (max-width: 875px)
 {
     #workspace {
@@ -171,8 +185,6 @@
     .jsRealSwipeElement {
         right: 110px;
     }
-
-
 
     /* Regularly ~400px wide, no margin */
     #address_paragraph {
@@ -315,8 +327,8 @@
     }
 
     #address_paragraph {
-        margin-left: 150px;
-        width: 200px;
+        margin-left: 160px;
+        width: 190px;
     }
     #promoForm {
         transform : scaleX(0.9) scaleY(0.9);
@@ -372,6 +384,10 @@
         transform-origin: top left;
     }
 
+    #address_paragraph {
+        top: 30px;
+    }
+
     /*
     .secondLineIntraLink {
         margin-top: 0px;
@@ -379,13 +395,11 @@
     */
 }
 
-@media screen and (max-width: 510px)
+@media screen and (max-width: 524px)
 {
-    /* Not sure whey the margin jump is necessary? */
     #address_paragraph {
-        margin-left: 190px;
-        width: 160px;
-        top: 30px;
+        margin-left: 180px;
+        width: 170px;
     }
 }
 
@@ -404,6 +418,11 @@
     #arrowLeftContainer {
         display: none;
     }
+
+    #address_paragraph {
+        margin-left: 190px;
+        width: 160px;
+    }
 }
 
 /* At 487px, the header elems break onto two lines again; reduce the header padding
@@ -421,6 +440,19 @@
 
     .menu {
         right: 15px;
+    }
+}
+
+@media screen and (max-width: 483px)
+{
+    #workspace {
+        background-color: #ffffff;
+    }
+
+    #address_paragraph {
+        top: 15px;
+        margin-left: 200px;
+        width: 150px;
     }
 }
 
@@ -443,17 +475,28 @@
     #address_paragraph {
         margin-left: 210px;
         width: 140px;
-        top: 10px;
+        top: 0px;
     }
 }
 
-@media screen and (max-width: 430px)
+@media screen and (max-width: 445px)
 {
-    /* Margin jump necessary again. */
     #address_paragraph {
         margin-left: 220px;
         width: 130px;
-        top: 0px;
+        top: -5px;
+    }
+}
+
+/*
+ * Make sure the contact page layout still looks good.
+ * Note that we don't decrease the width of the address_paragraph
+ * beyond 130px - it becomes too many lines at 120px (overlaps footer text).
+*/
+@media screen and (max-width: 430px)
+{
+    #address_paragraph {
+        margin-left: 230px;
     }
     #promoForm {
         transform : scaleX(0.75) scaleY(0.75);
@@ -563,7 +606,7 @@
     }
 
     #address_paragraph {
-        margin-left: 260px;
+        margin-left: 250px;
     }
     /* The border surrounding the map view */
     .cotact-pars.cotact-parsset
@@ -605,6 +648,11 @@
     .content-node-text {
         width: 85%;
     }
+
+    #address_paragraph {
+        margin-left: 260px;
+        top: -20px;
+    }
 }
 
 @media screen and (max-width: 353px)
@@ -636,6 +684,10 @@
     .menu {
         transform: scaleX(0.62) scaleY(0.62);
     }
+
+    #address_paragraph {
+        margin-left: 270px;
+    }
 }
 
 @media screen and (max-width: 330px)
@@ -650,9 +702,6 @@
     }
 
 
-    #address_paragraph {
-        margin-left: 270px;
-    }
     /* The border surrounding the map view */
     .cotact-pars.cotact-parsset
     {
@@ -661,6 +710,13 @@
     #promoForm
     {
         left: -40px;
+    }
+}
+
+@media screen and (max-width: 325px)
+{
+    #address_paragraph {
+        margin-left: 275px;
     }
 }
 
@@ -781,6 +837,27 @@
 }
 
 
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Width & Height Queries
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 765px),
+       screen and (max-height: 400px)
+{
+    #booking_button > .big_screen_link,
+    .big_screen_link {
+        display: none;
+    }
+    #booking_button > .small_screen_link,
+    .small_screen_link {
+        display: inline-block;
+    }
+
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * iPad hacks
