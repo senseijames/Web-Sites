@@ -336,7 +336,15 @@
     }
     #promoForm {
         transform : scaleX(0.9) scaleY(0.9);
+            -webkit-transform : scaleX(0.9) scaleY(0.9);
+            -moz-transform : scaleX(0.9) scaleY(0.9);
+            -ms-transform : scaleX(0.9) scaleY(0.9);
+            -o-transform : scaleX(0.9) scaleY(0.9);
         transform-origin: top left;
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
     }
 }
 
@@ -355,13 +363,29 @@
        we must also set the width for the sake of layout / collisions. */
     #logo {
         transform: scaleX(0.8) scaleY(0.8);
+            -webkit-transform : scaleX(0.8) scaleY(0.8);
+            -moz-transform : scaleX(0.8) scaleY(0.8);
+            -ms-transform : scaleX(0.8) scaleY(0.8);
+            -o-transform : scaleX(0.8) scaleY(0.8);
         transform-origin: top left;
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
         width: 216px;
     }
 
     .menu {
         transform: scaleX(0.8) scaleY(0.8);
+            -webkit-transform : scaleX(0.8) scaleY(0.8);
+            -moz-transform : scaleX(0.8) scaleY(0.8);
+            -ms-transform : scaleX(0.8) scaleY(0.8);
+            -o-transform : scaleX(0.8) scaleY(0.8);
         transform-origin: top right;
+            -webkit-transform-origin: top right;
+            -moz-transform-origin: top right;
+            -ms-transform-origin: top right;
+            -o-transform-origin: top right;
         padding: 0 0 0 0;
     }
 
@@ -371,6 +395,10 @@
     }
     #promoForm {
         transform : scaleX(0.8) scaleY(0.8);
+            -webkit-transform : scaleX(0.8) scaleY(0.8);
+            -moz-transform : scaleX(0.8) scaleY(0.8);
+            -ms-transform : scaleX(0.8) scaleY(0.8);
+            -o-transform : scaleX(0.8) scaleY(0.8);
     }
 }
 
@@ -385,7 +413,15 @@
     /* ul.entries.entriessetipad */
     .entries {
         transform: scaleX(0.9) scaleY(0.9);
+            -webkit-transform : scaleX(0.9) scaleY(0.9);
+            -moz-transform : scaleX(0.9) scaleY(0.9);
+            -ms-transform : scaleX(0.9) scaleY(0.9);
+            -o-transform : scaleX(0.9) scaleY(0.9);
         transform-origin: top left;
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
     }
 
     #address_paragraph {
@@ -504,6 +540,10 @@
     }
     #promoForm {
         transform : scaleX(0.75) scaleY(0.75);
+            -webkit-transform : scaleX(0.75) scaleY(0.75);
+            -moz-transform : scaleX(0.75) scaleY(0.75);
+            -ms-transform : scaleX(0.75) scaleY(0.75);
+            -o-transform : scaleX(0.75) scaleY(0.75);
         left: -70px;
     }
 }
@@ -530,11 +570,19 @@
 
     #logo {
         transform: scaleX(0.75) scaleY(0.75);
+            -webkit-transform : scaleX(0.75) scaleY(0.75);
+            -moz-transform : scaleX(0.75) scaleY(0.75);
+            -ms-transform : scaleX(0.75) scaleY(0.75);
+            -o-transform : scaleX(0.75) scaleY(0.75);
         width: 202px;
     }
 
     .menu {
         transform: scaleX(0.75) scaleY(0.75);
+            -webkit-transform : scaleX(0.75) scaleY(0.75);
+            -moz-transform : scaleX(0.75) scaleY(0.75);
+            -ms-transform : scaleX(0.75) scaleY(0.75);
+            -o-transform : scaleX(0.75) scaleY(0.75);
     }
 
     /* The content text is normally sized to 30% width; but at the current (mobile phone!)
@@ -561,11 +609,19 @@
 
     #logo {
         transform: scaleX(0.7) scaleY(0.7);
+            -webkit-transform : scaleX(0.7) scaleY(0.7);
+            -moz-transform : scaleX(0.7) scaleY(0.7);
+            -ms-transform : scaleX(0.7) scaleY(0.7);
+            -o-transform : scaleX(0.7) scaleY(0.7);
         width: 189px;
     }
 
     .menu {
         transform: scaleX(0.7) scaleY(0.7);
+            -webkit-transform : scaleX(0.7) scaleY(0.7);
+            -moz-transform : scaleX(0.7) scaleY(0.7);
+            -ms-transform : scaleX(0.7) scaleY(0.7);
+            -o-transform : scaleX(0.7) scaleY(0.7);
     }
 
     .content-node-text {
@@ -607,6 +663,10 @@
     /* Crafty way to move intra-page links down without using their margin (inlined) or position (unavailable!) */
     .entries {
         transform-origin: left;
+            -webkit-transform-origin: left;
+            -moz-transform-origin: left;
+            -ms-transform-origin: left;
+            -o-transform-origin: left;
     }
 
     #address_paragraph {
@@ -635,11 +695,19 @@
 
     #logo {
         transform: scaleX(0.65) scaleY(0.65);
+            -webkit-transform : scaleX(0.65) scaleY(0.65);
+            -moz-transform : scaleX(0.65) scaleY(0.65);
+            -ms-transform : scaleX(0.65) scaleY(0.65);
+            -o-transform : scaleX(0.65) scaleY(0.65);
         width: 175px;
     }
 
     .menu {
         transform: scaleX(0.65) scaleY(0.65);
+            -webkit-transform : scaleX(0.65) scaleY(0.65);
+            -moz-transform : scaleX(0.65) scaleY(0.65);
+            -ms-transform : scaleX(0.65) scaleY(0.65);
+            -o-transform : scaleX(0.65) scaleY(0.65);
     }
 }
 
@@ -682,11 +750,19 @@
 
     #logo {
         transform: scaleX(0.62) scaleY(0.62);
+            -webkit-transform : scaleX(0.62) scaleY(0.62);
+            -moz-transform : scaleX(0.62) scaleY(0.62);
+            -ms-transform : scaleX(0.62) scaleY(0.62);
+            -o-transform : scaleX(0.62) scaleY(0.62);
         width: 167px;
     }
 
     .menu {
         transform: scaleX(0.62) scaleY(0.62);
+            -webkit-transform : scaleX(0.62) scaleY(0.62);
+            -moz-transform : scaleX(0.62) scaleY(0.62);
+            -ms-transform : scaleX(0.62) scaleY(0.62);
+            -o-transform : scaleX(0.62) scaleY(0.62);
     }
 
     #address_paragraph {
@@ -703,6 +779,10 @@
     /* Crafty way to move intra-page links down without using their margin (inlined) or position (unavailable!) */
     .entries {
         transform-origin: bottom left;
+            -webkit-transform-origin: bottom left;
+            -moz-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+            -o-transform-origin: bottom left;
     }
 
 
@@ -740,11 +820,19 @@
 
     #logo {
         transform: scaleX(0.6) scaleY(0.6);
+            -webkit-transform : scaleX(0.6) scaleY(0.6);
+            -moz-transform : scaleX(0.6) scaleY(0.6);
+            -ms-transform : scaleX(0.6) scaleY(0.6);
+            -o-transform : scaleX(0.6) scaleY(0.6);
         width: 162px;
     }
 
     .menu {
         transform: scaleX(0.6) scaleY(0.6);
+            -webkit-transform : scaleX(0.6) scaleY(0.6);
+            -moz-transform : scaleX(0.6) scaleY(0.6);
+            -ms-transform : scaleX(0.6) scaleY(0.6);
+            -o-transform : scaleX(0.6) scaleY(0.6);
     }
 
     .content-node-text {
