@@ -1320,12 +1320,6 @@ i.breakline {
             .isNotTouch .footer-contacts-mail:hover{
                 color:#00a7e5;
                 }
-        .isMobileDevice .footer-contacts{
-            text-align: center;
-            width:100%;
-            top:100%;
-            margin-top:15px;
-            }
 		.copyright {
 			float: left;
 			color: #999;
