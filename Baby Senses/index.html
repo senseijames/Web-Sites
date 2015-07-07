@@ -43,6 +43,29 @@
 <body class="html front not-logged-in two-sidebars page-node i18n-en img-welcome">
 <div id="fb-root"></div>
 <div id="workspace">
+    <div> <!-- Booking button top menu link -->
+        <ul class="menu" id="booking_button">
+            <li id="booking_popup" class="big_screen_link first leaf jsButtonWrapper btn isInit">
+                <a href="#"> <img src="images/booking.png"  /></a>
+                <span class="jsVisualButton jsVisualButtonset">
+                    <a href="#" class="jsRealButton"></a><span class="btn-text ">Pricing & Booking</span>
+                </span>
+            </li>
+            <li class="small_screen_link first leaf jsButtonWrapper btn isInit">
+                <a target="_blank" href="https://clients.mindbodyonline.com/classic/home?studioid=221095"> <img src="images/booking.png"  /></a>
+                <span class="jsVisualButton jsVisualButtonset">
+                    <a href="#" class="jsRealButton"></a><span class="btn-text ">Pricing & Booking</span>
+                </span>
+            </li>
+        </ul>
+
+        <div style="display:none !important; visibility:hidden !important; opacity:0 !important;">
+            <ul class="menu"><li class="first leaf jsButtonWrapper btn isInit"><span class="jsVisualButton"><a href="#" class="jsRealButton" id="profileLink"></a><span class="btn-text"></span><small id="bankTip" class="tip"></small></span></li>
+                <li class="last leaf jsButtonWrapper btn isInit"><span class="jsVisualButton"><a href="#" class="jsRealButton"></a><span class="btn-text"></span></span></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="header">
         <div class="header-content clearfix" id="header">
             <a href="index.html" title="BabySenses" rel="home" id="logo">
@@ -178,18 +201,7 @@
             <!-- <div class="region region-header"> -->
             <!-- <div id="block-system-main-menu" class="block block-system block-menu"> -->
 
-            <ul class="menu" id="booking_button">
-                <li class="first leaf jsButtonWrapper btn isInit"><a href="#" class="html_popup"> <img src="images/booking.png"  /></a>
-                    <span class="jsVisualButton jsVisualButtonset">
-                        <a href="#" class="html_popup jsRealButton"></a><span class="btn-text ">Pricing & Booking</span>
-                    </span>
-                </li>
-            </ul>
-            <div style="display:none !important; visibility:hidden !important; opacity:0 !important;">
-                <ul class="menu"><li class="first leaf jsButtonWrapper btn isInit"><span class="jsVisualButton"><a href="#" class="jsRealButton" id="profileLink"></a><span class="btn-text"></span><small id="bankTip" class="tip"></small></span></li>
-                    <li class="last leaf jsButtonWrapper btn isInit"><span class="jsVisualButton"><a href="#" class="jsRealButton"></a><span class="btn-text"></span></span></li>
-                </ul>
-            </div>
+
 
 
             <!-- </div> -->  <!-- </div> -->
@@ -493,7 +505,8 @@
     PO Box 336653<br>
     Dubai, United Arab Emirates</span>
                         <div class="google-map">
-                            <a class="large_map_link" style="font-family: Roboto,Arial;font-size: 12px;position: absolute;z-index: 999999;top: 16px;left: 36px;color: #3A84DF;" href="#">View larger map</a>
+                            <a class="large_map_link big_screen_link" id="large_map_link_popup" style="font-family: Roboto,Arial;font-size: 12px;position: absolute;z-index: 999999;top: 16px;left: 36px;color: #3A84DF;" href="#">View larger map</a>
+                            <a class="large_map_link small_screen_link" style="font-family: Roboto,Arial;font-size: 12px;position: absolute;z-index: 999999;top: 16px;left: 36px;color: #3A84DF;" target="_blank" href="https://www.google.com/maps/place/Baby+Senses+Mother+Child+Centre+DMCC/@25.063572,55.135767,16z/data=!4m2!3m1!1s0x0:0xf43838fff44265ad">View larger map</a>
                             <iframe width="348" height="116" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3614.146360237994!2d55.138214!3d25.063028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6cb34863c837%3A0xf43838fff44265ad!2sBaby+Senses+Mother+Child+Centre+DMCC!5e0!3m2!1sen!2sus!4v1427455496733" style="border:0"></iframe>
                             <a href="policies.html">Booking & Cancellation </a> | <a href="legal.html">Terms & Conditions</a><br>
                             <img src="images/visa.png"><img src="images/mc.png">
