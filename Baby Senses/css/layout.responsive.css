@@ -29,6 +29,11 @@
     width: 408px;
 }
 
+/* The intra-page links - let them breathe a little, spacing them a little from the main content text.  */
+.entries {
+    margin-top: 20px;
+}
+
 /* Move the footer above the header and body content, so that it doesn't risk occlusion. */
 .footer {
     z-index: 30;
