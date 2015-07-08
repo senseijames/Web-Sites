@@ -1,0 +1,421 @@
+/*@media screen and (max-device-width: 480px) {*/
+/* TODO: Media query here is redundant, given how this file is imported */
+@media screen and (max-width: 760px), screen and (-webkit-device-pixel-ratio: 1.5) {
+
+    /* Perform some cleanup */
+    #booking_button > .big_screen_link,
+    .big_screen_link {
+        display: none;
+    }
+
+    #logo {
+        transform: scaleX(0.8) scaleY(0.8);
+        -webkit-transform : scaleX(0.8) scaleY(0.8);
+        -moz-transform : scaleX(0.8) scaleY(0.8);
+        -ms-transform : scaleX(0.8) scaleY(0.8);
+        -o-transform : scaleX(0.8) scaleY(0.8);
+        transform-origin: top left;
+        -webkit-transform-origin: top left;
+        -moz-transform-origin: top left;
+        -ms-transform-origin: top left;
+        -o-transform-origin: top left;
+        width: 150px;
+    }
+
+    .menu {
+        transform: scaleX(0.8) scaleY(0.8);
+        -webkit-transform : scaleX(0.8) scaleY(0.8);
+        -moz-transform : scaleX(0.8) scaleY(0.8);
+        -ms-transform : scaleX(0.8) scaleY(0.8);
+        -o-transform : scaleX(0.8) scaleY(0.8);
+        transform-origin: top right;
+        -webkit-transform-origin: top right;
+        -moz-transform-origin: top right;
+        -ms-transform-origin: top right;
+        -o-transform-origin: top right;
+        padding: 0 0 0 0;
+    }
+
+
+
+
+
+    BODY {
+        height: 100%;
+    }
+    HTML,
+    BODY {
+        min-height: 525px;
+        overflow: hidden;
+        -webkit-text-size-adjust:none;
+    }
+    HTML {
+        height: 525px;
+    }
+    BODY {
+        position: relative;
+    }
+    #workspace {
+        min-width: inherit;
+        width: 100%;
+        /*height: 480px;*/
+        /*min-height: 480px;*/
+        /*}*/
+        /*BODY.formActive,*/
+        /*#workspace.formActive {*/
+        height: 725px;
+        min-height: 525px;
+        /*-webkit-transition: top 300ms ease-in-out;*/
+    }
+    .visible-description #workspace {
+        /*height: 725px;*/
+        /*width: 320px;*/
+        /*overflow: visible;*/
+        /*overflow-x: hidden;*/
+        /*overflow-y: visible;*/
+        /*top: -250px;*/
+        /*-webkit-transform: translate3d(0, -250px, 0);*/
+        /*background: #000;*/
+    }
+    .header {
+        padding: 0 15px;
+        -webkit-transition: -webkit-transform 300ms ease-in-out;
+    }
+    .visible-description .header {
+        -webkit-transform: translate3d(0, -250px, 0);
+    }
+    #logo {
+        margin-top: 15px;
+    }
+    .menu {
+        margin-top: 18px;
+        padding-left: 0;
+    }
+    UL.menu .first {
+        margin-left: 0;
+    }
+    .push {
+        display: none;
+    }
+    .content {
+        height: 100px;
+        margin-top: -250px;
+    }
+    /*.visible-description .content {*/
+    /*height: 500px;*/
+    /*}*/
+    .content-node-text {
+        width: 93%;
+        min-width: 292px;
+        top: -200px;
+        left: 0;
+        padding: 0 14px;
+        opacity: 1;
+        visibility: hidden;
+        -webkit-transition: -webkit-transform 300ms ease-in-out;
+    }
+    .isInit .content-node-text {
+        visibility: visible;
+    }
+    .visible-description .content-node-text {
+        -webkit-transform: translate3d(0, -250px, 0);
+    }
+    .start-screen {
+        top: -363px;
+        height: 200px;
+        text-align: center;
+    }
+    #formAfterword {
+        top: -320px;
+    }
+    .mainHeading {
+        font-size: 27px;
+    }
+    .heading {
+        font-size: 40px;
+    }
+    .isInit .entries,
+    .intro {
+        opacity: 0;
+        font-size: 13px;
+        line-height: 19px;
+        -webkit-transition: opacity 500ms ease-in-out;
+        transition: opacity 500ms ease-in-out;
+    }
+    .visible-description .entries,
+    .visible-description .intro,
+    #formAfterword .intro {
+        opacity: 1;
+    }
+    .start-screen .intro {
+        display: block;
+        opacity: 1;
+    }
+    #formAfterword .btn-big {
+        margin-top: 30px;
+    }
+    #detailButton {
+        display: none;
+    }
+    .start-screen P {
+        text-align: left;
+    }
+    .entries {
+        margin: 0;
+        /*width: 51px;*/
+        /*float: left;*/
+    }
+    .entry-row {
+        padding-top: 15px;
+        clear: both;
+    }
+    .entry-body {
+        opacity: 1;
+        overflow: hidden;
+        position: static;
+        font-size: 13px;
+    }
+    #workspaceMovable {
+        margin-top: 20px;
+        min-height: inherit;
+    }
+    #figure {
+        /*-webkit-transition: opacity 300ms ease-in-out;*/
+    }
+    .visible-description #figure {
+        opacity: 0;
+    }
+    .content-node-text.isForm {
+        width: 320px;
+        overflow: visible;
+        max-width: 320px;
+        padding: 0;
+        z-index: 9999;
+    }
+    .form-intro {
+        /*display: none;*/
+        width: 292px;
+        padding: 0;
+        text-align: center;
+        top: 30px;
+        left: 50%;
+        background: #F9F9F9;
+        margin-left: -146px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .form-intro-mobile {
+        display: block;
+    }
+    .form-intro,
+    .formSent .form-intro,
+    .isAnimating .form-intro,
+    .isAnimating.formActive .form-intro {
+        opacity: 1;
+    }
+    .form-intro P {
+        margin:0 0 10px;
+    }
+    #promoForm {
+        top: 60px;
+        /*left: 50%;*/
+        /*margin-left: -318px;*/
+    }
+    #promoFormTop,
+    #promoFormBottom {
+        padding-left: 30px;
+        padding-right: 45px;
+        background: #FFF;
+    }
+    #promoFormBottom {
+        height: 140px;
+    }
+    #promoFormTop,
+    #promoFormTopOverlay {
+        padding-top: 25px;
+    }
+    #promoFormTop {
+        height: 138px;
+    }
+    #promoFormTopBack,
+    #promoFormBottomBack {
+        width: 320px;
+    }
+    .jsRealTextInput,
+    .jsRealTextInput[type="text"],
+    .jsRealTextInput[type="email"],
+    .jsRealTextInput[type="tel"] {
+        margin-bottom: 27px;
+        font-size: 14px;
+    }
+    .isTouch .isPlaceholderInputInit LABEL,
+    .jsTextareaWrapper LABEL {
+        bottom: 27px;
+        width: 262px;
+        font-size: 14px;
+    }
+    .isPlaceholderInputInit .isReduced {
+        bottom: 27px;
+    }
+    TEXTAREA {
+        width: 252px;
+        height: 28px;
+        margin-bottom: 0;
+    }
+    #jsWordCounter {
+        bottom: 2px;
+        right: -14px;
+        font-size: 11px;
+        line-height: 11px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .form-controls {
+        width: 262px;
+    }
+    #detailButton {
+        position: absolute;
+        top: -215px;
+        left: 75%;
+        display: block;
+        opacity: 0;
+        z-index: -1;
+        -webkit-transition:-webkit-transform 300ms ease-in-out;
+    }
+    #detailButton.isVisible {
+        opacity: 1;
+        z-index: 99999;
+    }
+    .visible-description #detailButton {
+        -webkit-transform: translate3d(0, -250px, 0);
+    }
+    .footer {
+        text-align: center;
+        bottom: 255px;
+        -webkit-transition:-webkit-transform 300ms ease-in-out;
+    }
+    .visible-description .footer {
+        -webkit-transform: translate3d(0, 700px, 0);
+    }
+    .formActive .footer {
+        text-align: left;
+        -webkit-transform: translate3d(0, 112px, 0);
+    }
+    .copyright,
+    .socialFill {
+        display: none;
+    }
+    .pager {
+        top: -88px;
+        visibility: hidden;
+    }
+    .startScreenPassed .pager {
+        visibility: visible;
+    }
+    .jsPagerItem {
+        padding: 14px 14px;
+    }
+    #jsLangs,
+    .social-buttons {
+        display: inline-block;
+        vertical-align: top;
+        float: none;
+        margin: 0 5px;
+    }
+}
+
+.mobile-static-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: auto 100%;
+    -webkit-transition: opacity 200ms ease-in-out;
+    -moz-transition: opacity 200ms ease-in-out;
+    -ms-transition: opacity 200ms ease-in-out;
+    -o-transition: opacity 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
+}
+.mobile-static-img,
+.visible-description .mobile-static-img,
+.visible-description .mobile-static-img.isVisible {
+    opacity: 0;
+}
+.mobile-static-img.isVisible {
+    opacity: 1;
+}
+.isOldAndroid .content-node-text.isForm {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -160px;
+    opacity: 0;
+}
+.isOldAndroid .isFormActive .content-node-text.isForm {
+    opacity: 1;
+}
+.isOldAndroid #workspaceMovable {
+    width: 100%;
+    display: block;
+}
+/* LOH: Download these images from the svg, and make them the right size - 1910 x 510.
+        Then startup the site and hope!
+
+   IDEA: Baby Senses (what if all the dynamically embedded device styles are static - what if they were added on the server, and we cloned a single static copy?  Hence why it shows 'windows'?)
+        */
+.mobile-static-img_0 {
+    background-image: url(http://singlecard.co.uk/sites/all/themes/single/images/images/android/img-welcome.png);
+}
+.mobile-static-img_1 {
+    background-image: url(http://singlecard.co.uk/sites/all/themes/single/images/android/img-1_service_.png);
+}
+.mobile-static-img_2 {
+    background-image: url(http://singlecard.co.uk/sites/all/themes/single/images/android/img-2_bank_.png);
+}
+.mobile-static-img_3 {
+    background-image: url(http://singlecard.co.uk/sites/all/themes/single/images/android/img-3_concierge_.png);
+}
+.mobile-static-img_4 {
+    background-image: url(http://singlecard.co.uk/sites/all/themes/single/images/android/img-4_privileges_.png);
+}
+.mobile-static-img_5 {
+    background-image: url(http://singlecard.co.uk/sites/all/themes/single/images/android/img-5_travel_.png);
+}
+
+/*@media screen and (max-device-width: 480px) and (orientation: landscape) {*/
+
+/*.content-node-text {*/
+/*width: 245px;*/
+/*min-width: 245px;*/
+/*top: -180px;*/
+/*left: 45%;*/
+/*}*/
+/*.start-screen {*/
+/*top: -280px;*/
+/*text-align: left;*/
+/*}*/
+/*#workspaceMovable {*/
+/*margin-top: 50px;*/
+/*margin-left: -120px;*/
+/*}*/
+/*#detailButton {*/
+/*top: -50px;*/
+/*left: 45%;*/
+/*margin-left: 15px;*/
+/*}*/
+/*#promoForm {*/
+/*left: 50%;*/
+/*margin-left: -200px;*/
+/*}*/
+
+/*}*/
+
+/*#workspace {*/
+/*border: 10px solid #000;*/
+/*}*/
+/*.isSVG #workspace {*/
+/*border: none;*/
+/*}*/
