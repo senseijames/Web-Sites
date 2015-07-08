@@ -1,6 +1,8 @@
-/*@media screen and (max-device-width: 480px) {*/
-/* TODO: Media query here is redundant, given how this file is imported */
-@media screen and (max-width: 760px), screen and (-webkit-device-pixel-ratio: 1.5) {
+/* Take 1: @media screen and (max-device-width: 480px)
+ * Take 2: @media screen and (max-width: 760px), screen and (-webkit-device-pixel-ratio: 1.5) {
+ * Take 3: remove query and instead wrap the @import statement in a media query in index.html
+ */
+
 
     /* Perform some cleanup */
     #booking_button > .big_screen_link,
@@ -321,7 +323,9 @@
         float: none;
         margin: 0 5px;
     }
-}
+/* End previous media queries */
+
+
 
 .mobile-static-img {
     position: absolute;
@@ -361,10 +365,7 @@
     width: 100%;
     display: block;
 }
-/* LOH: Download these images from the svg, and make them the right size - 1910 x 510.
-        Then startup the site and hope!
-
-   IDEA: Baby Senses (what if all the dynamically embedded device styles are static - what if they were added on the server, and we cloned a single static copy?  Hence why it shows 'windows'?)
+/* TODO: Download these images from the svg, and make them the right size - 1910 x 510.
         */
 .mobile-static-img_0 {
     background-image: url(http://singlecard.co.uk/sites/all/themes/single/images/images/android/img-welcome.png);

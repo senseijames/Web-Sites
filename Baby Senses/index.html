@@ -13,8 +13,26 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://Babysenses.co.uk/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://Babysenses.co.uk/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://Babysenses.co.uk/apple-touch-icon-precomposed.png">
-
+    
     <meta name="viewport" content="width=device-width">
+
+    <script>
+        //var IS_MOBILE_DEVICE_QUERY = 'screen and (max-width: 760px), (-webkit-device-pixel-ratio: 1.5)';
+        var IS_MOBILE_DEVICE_QUERY = 'screen and (max-device-width: 500px)';
+        var queryResult = window.matchMedia(IS_MOBILE_DEVICE_QUERY);
+console.info('Mobile device Query Result:', queryResult);
+        if (queryResult.matches) // User is browsing from a mobile device!
+        {
+console.info('\tiPhone!!');
+            viewport = document.querySelector("meta[name=viewport]");
+            viewport.setAttribute('content', 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no');
+        }
+        else
+        {
+            // User is not browsing from a mobile device.
+console.info('\tNot iPhone');
+        }
+    </script>
 
     <link href='css/Roboto.google.css' rel='stylesheet' type='text/css'>
     <link href="css/popup.css" rel="stylesheet">
@@ -33,8 +51,15 @@
     @import url("css/components.css?m9xq51");
     @import url("css/layout.css?m9xq51");</style>
     <!--[if lte IE 8]><link href="/sites/all/themes/single/styles/ie.css" rel="stylesheet" type="text/css" /><![endif]-->
-    <link rel="stylesheet" type="text/css" href="css/layout.responsive.old.css">
-    <link rel="stylesheet" type="text/css" href="css/layout.responsive.css">
+
+    <!-- Load in the right style sheet per our determination of 'is this is a mobile device?' -->
+    <style type="text/css" media="all">
+        /* !IS_MOBILE_DEVICE_QUERY */
+        @import url("css/layout.responsive.old.css") screen and (min-device-width: 501px);
+        @import url("css/layout.responsive.css") screen and (min-device-width: 501px);
+        /* IS_MOBILE_DEVICE_QUERY */
+        @import url("css/layout.mobile.css") screen and (max-device-width: 500px);
+    </style>
 </head>
 
 
