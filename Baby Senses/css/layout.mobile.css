@@ -38,8 +38,12 @@
         padding: 0 0 0 0;
     }
 
-
-
+    .footer-contacts
+    {
+        top  : 68px;
+        left : -15px;
+    }
+    
 
 
     BODY {

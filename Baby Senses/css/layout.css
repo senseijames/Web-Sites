@@ -117,10 +117,12 @@ i.breakline {
     color: #f06da9; display: inline;
     margin-right: 4px;
 }
-.cotact-pars.cotact-parsset .label-text a{color: #797878;}
-.cotact-pars.cotact-parsset span.color {
-    color: #797878;
+
+.grey_color
+{
+	color: #797878;
 }
+
 .cotact-pars.cotact-parsset .google-map {
   clear: both;
     margin-top: 20px;
