@@ -1,16 +1,19 @@
 $(document).ready(function(){
 	
-	var BOOK_PAGES = [ "books/MaestrosKaizen.html",
-	                   "books/MandatedReport.html",
-	                   "books/PoemasDeUnSennin.html",
-	                   "books/DonJuan.html",
-	                   "books/JulioWolf.html",
-	                   "books/CapitanWolf.html",
-	                   "books/LoQueTengoQueDecir.html",
-	                   "books/LaBitacora.html",
-	                   "books/Miakoda.html",
-	                   "books/Omayok.html",
-	                   "books/Penuel.html" ];
+	var BOOK_PAGES = [  "books/MaestrosKaizen.html",
+	                    "books/MandatedReport.html",
+	                    "books/PoemasDeUnSennin.html",
+	                    "books/DonJuan.html",
+	                    "books/JulioWolf.html",
+	                    "books/CapitanWolf.html",
+	                    "books/LoQueTengoQueDecir.html",
+	                    "books/LaBitacora.html",
+	                    "books/Miakoda.html",
+	                    "books/Omayok.html",
+	                    "books/Penuel.html",
+                      "books/MisticismoDelSennin.html",
+                      "books/SabioGuerrero.html",
+                      "books/DemonioMara.html"];
 	var BOOK_PAGE_ID_PREFIX_LENGTH 	= 11; // "book_cover_N"
 	var BOOK_DESC_ID_PREFIX 		= "#book_desc_";
 	var BOOK_COMMENT_CLASS_PREFIX   = ".book_comment_";
