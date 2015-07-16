@@ -3,6 +3,9 @@
  * This code runs immediately upon site load, so keep it toward the top of head,
  * before any styles are imported.
  * If we detect a mobile browser, redirect to the mobile site.
+ *
+ * THIS FILE HAS BEEN DEPRECATED!  While orphaned, going to keep it around in case it proves
+ * useful in the immediate future.
  */
 
 check_browser ();
@@ -13,7 +16,6 @@ check_browser ();
  */
 function check_browser ()
 {
-return;
   if (is_user_mobile())
   {
     window.location = 'index.mobile.html';

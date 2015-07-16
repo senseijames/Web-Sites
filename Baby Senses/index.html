@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://Babysenses.co.uk/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://Babysenses.co.uk/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://Babysenses.co.uk/apple-touch-icon-precomposed.png">
-    
+
     <meta name="viewport" content="width=device-width">
 
     <script>
@@ -67,7 +67,18 @@ console.info('\tNot iPhone');
 
 <body class="html front not-logged-in two-sidebars page-node i18n-en img-welcome">
 <div id="fb-root"></div>
-<div id="workspace">
+
+
+<ul class="menu" id="booking_button_mobile">
+    <li class="small_screen_link first leaf jsButtonWrapper btn isInit">
+        <a target="_blank" href="https://clients.mindbodyonline.com/classic/home?studioid=221095"> <img src="images/booking.png"  /></a>
+                <span class="jsVisualButton jsVisualButtonset">
+                    <a href="#" class="jsRealButton"></a><span class="btn-text ">Pricing & Booking</span>
+                </span>
+    </li>
+</ul>
+
+    <div id="workspace">
     <div> <!-- Booking button top menu link -->
         <ul class="menu" id="booking_button">
             <li id="booking_popup" class="big_screen_link first leaf jsButtonWrapper btn isInit">
@@ -250,7 +261,8 @@ console.info('\tNot iPhone');
             <h1 class="mainHeading rightSide">Our </h1>
             <h2 class="heading rightSide">Services</h2>
             <div class="intro rightSide">
-                <p>We offer a wide range of non-medical support to pregnant women and new parents, including prenatal awareness sessions, as well as private postnatal support sessions to help with the non-medical side of sleep and feeding related issues. We believe in creating a comfortable social environment around fact-based education, and providing the “softer” insight and emotional support which medical facilities often overlook.</p>                                </div>
+                <p>We offer a wide range of non-medical support to pregnant women and new parents, including prenatal awareness sessions, as well as private postnatal support sessions to help with the non-medical side of sleep and feeding related issues. We believe in creating a comfortable social environment around fact-based education, and providing the “softer” insight and emotional support which medical facilities often overlook.</p>
+            </div>
 
 
         </div>
@@ -510,13 +522,35 @@ console.info('\tNot iPhone');
         <div id="figure" class="svg-container"></div>
         <div class="svg-container" id="figureLine"></div>
 
-        <div  class="content-node-text jsContentNodeText isForm noHeading">
+        <div  class="content-node-text jsContentNodeText isForm noHeading contactUsNodeText">
             <div id="address_paragraph" class="form-intro form-intro-desktop">
                 <p>Baby Senses is newly located in Cluster N of Jumeirah Lakes Towers. Please feel free to drop by any time – we’d love to meet you. In addition to our various service offerings, we host Baby Weight Mornings at our offices, where all mothers are invited to join us for coffee and snacks, weigh their babies, and casually share tips, advice or stories from their parenting experiences (for free of course) - call or email us for more details! </p>
                 <div>&nbsp;</div>
             </div>
 
-            <div class="form-intro form-intro-mobile"></div>
+            <div class="form-intro form-intro-mobile" id="mobile_contact_us">
+                <p>Baby Senses is newly located in Cluster N of Jumeirah Lakes Towers. Please feel free to drop by any time – we’d love to meet you. In addition to our various service offerings, we host Baby Weight Mornings at our offices, where all mothers are invited to join us for coffee and snacks, weigh their babies, and casually share tips, advice or stories from their parenting experiences (for free of course) - call or email us for more details! </p>
+
+                <div class="cotact-pars cotact-parsset cotact-parssetset">
+                    <div class="label-text"><span><label>T:</label><span class="color"><a href="tel:+971.4.558.7307">+971.4.558.7307</a></span></span>
+                        <span><label>E:</label><a href="mailto:info@babysenses.me">info@babysenses.me</a></span></div>
+                    <label>Address</label>
+
+                    <span id="promoFormAddressMobile">Baby Senses Mother Child Centre DMCC<br>
+                        Jumeirah Business Centre 4, Unit 1202<br>
+                        Jumeirah Lakes Towers, Cluster N<br>
+                        PO Box 336653<br>
+                        Dubai, United Arab Emirates<br>
+                        <a target="_blank" href="https://www.google.com/maps/place/Baby+Senses+Mother+Child+Centre+DMCC/@25.063572,55.135767,16z/data=!4m2!3m1!1s0x0:0xf43838fff44265ad">View on Google Maps</a><br>
+                        <br>
+                        <a href="policies.html">Booking & Cancellation </a> | <a href="legal.html">Terms & Conditions</a><br>
+                    </span>
+
+                    <!-- Empty div is used to give its parent dimension -->
+                    <div class="google-map">
+                    </div>
+                </div>
+            </div>
 
             <form id="promoForm" >
                 <div id="promoFormTopBack">
@@ -604,6 +638,5 @@ console.info('\tNot iPhone');
 <script src="js/lib/jquery.popup.js"></script>
 <script src="js/lib/facebook.js"></script>
 <script src="js/site.init.js"></script>
-<script src="js/bootstrap.js"></script>
 </body>
 </html>
