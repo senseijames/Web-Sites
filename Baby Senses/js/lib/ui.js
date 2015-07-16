@@ -1035,10 +1035,16 @@ UI.initWorkspace = function(object, minWidth, minHeight, time, states, isMobile,
                 that.removeClass(htmlDomObject, 'visible-description');
                 htmlDomObject.style.height = '';
                 isDescriptionVisible = false;
+
+              setTimeout(function(){
+                $('#booking_button_mobile').show();
+              }, 300);
+
             } else {
                 that.addClass(htmlDomObject, 'visible-description');
                 countMobileDescriptionHeight();
                 isDescriptionVisible = true;
+              $('#booking_button_mobile').hide();
             }
         }
 

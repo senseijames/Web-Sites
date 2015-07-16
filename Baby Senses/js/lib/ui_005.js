@@ -356,7 +356,7 @@ UI.button = function(object, form, visualButton, buttonWrapper){
             };
         }
 //        search visual button
-        button = visualButton || that.getParentBy(object, {$c: 'jsVisualButton'});
+        button = visualButton || that.getParentBy(object, {$c: 'jsVisualButton'}) || object;
 //        search wrapper
         wrapper = buttonWrapper || that.getParentBy(button, {$c: 'jsButtonWrapper'}) || button;
 
