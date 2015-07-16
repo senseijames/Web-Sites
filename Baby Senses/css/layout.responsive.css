@@ -75,6 +75,13 @@
     display: none;
 }
 
+#booking_link_mobile {
+    display: none;
+}
+
+#mobile_contact_us {
+    display: none;
+}
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -279,6 +286,7 @@
     #address_paragraph {
         margin-left: 80px;
         width: 260px;
+        top: 70px;
     }
     #promoForm {
         left: -80px;
@@ -402,6 +410,7 @@
     #address_paragraph {
         margin-left: 170px;
         width: 180px;
+        top: 20px;
     }
     #promoForm {
         transform : scaleX(0.8) scaleY(0.8);
@@ -855,7 +864,6 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Height management
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* TODO: 'pricing and booking' link: .menu { margin-top: 31px }; may need to shift this up so it remains visible on contact page.
 
 /* At ~688px, the footer nav buttons start to collide with the contact us 'address' content;
    trim some vertical fat off the latter to make room. */

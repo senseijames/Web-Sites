@@ -4,49 +4,106 @@
  */
 
 
-    /* Perform some cleanup */
-    #booking_button > .big_screen_link,
-    .big_screen_link {
-        display: none;
-    }
+/**
+ * Perform some cleanup / setup for mobile screens.
+ */
+#booking_button > .big_screen_link,
+.big_screen_link {
+    display: none;
+}
 
-    #logo {
-        transform: scaleX(0.8) scaleY(0.8);
-        -webkit-transform : scaleX(0.8) scaleY(0.8);
-        -moz-transform : scaleX(0.8) scaleY(0.8);
-        -ms-transform : scaleX(0.8) scaleY(0.8);
-        -o-transform : scaleX(0.8) scaleY(0.8);
-        transform-origin: top left;
-        -webkit-transform-origin: top left;
-        -moz-transform-origin: top left;
-        -ms-transform-origin: top left;
-        -o-transform-origin: top left;
-        width: 150px;
-    }
+#booking_button > .small_screen_link {
+    display: none;
+}
 
-    .menu {
-        transform: scaleX(0.8) scaleY(0.8);
-        -webkit-transform : scaleX(0.8) scaleY(0.8);
-        -moz-transform : scaleX(0.8) scaleY(0.8);
-        -ms-transform : scaleX(0.8) scaleY(0.8);
-        -o-transform : scaleX(0.8) scaleY(0.8);
-        transform-origin: top right;
-        -webkit-transform-origin: top right;
-        -moz-transform-origin: top right;
-        -ms-transform-origin: top right;
-        -o-transform-origin: top right;
-        padding: 0 0 0 0;
-    }
+#logo {
+    transform: scaleX(0.8) scaleY(0.8);
+    -webkit-transform : scaleX(0.8) scaleY(0.8);
+    -moz-transform : scaleX(0.8) scaleY(0.8);
+    -ms-transform : scaleX(0.8) scaleY(0.8);
+    -o-transform : scaleX(0.8) scaleY(0.8);
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+    width: 150px;
+}
 
-    .footer-contacts
-    {
-        top  : 68px;
-        left : -15px;
-    }
-    
+.menu {
+    transform: scaleX(0.8) scaleY(0.8);
+    -webkit-transform : scaleX(0.8) scaleY(0.8);
+    -moz-transform : scaleX(0.8) scaleY(0.8);
+    -ms-transform : scaleX(0.8) scaleY(0.8);
+    -o-transform : scaleX(0.8) scaleY(0.8);
+    transform-origin: top right;
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -ms-transform-origin: top right;
+    -o-transform-origin: top right;
+    padding: 0 0 0 0;
+}
+
+.footer-contacts
+{
+    top  : 68px;
+    left : -15px;
+}
+
+.entry-body
+{
+    display : none;
+    position: absolute;
+    padding-left:14px;
+    padding-right: 14px;
+}
 
 
-    BODY {
+.entries {
+    position:absolute;
+    top: 300px;
+}
+
+#booking_button_mobile {
+    position: absolute;
+    right: 10px;
+    /* Just enough to keep it above the header content! */
+    z-index: 8;
+}
+
+
+#currentContent.contactUsNodeText
+{
+    position:relative;
+    left:4900px;
+    top:60px;
+}
+
+/* Hide most of the 'desktop' contact us page */
+#figureClip,
+#figureClipTop,
+#figureLine,
+#promoForm
+{
+    display: none;
+}
+
+.cotact-pars.cotact-parsset
+{
+    padding: 10px;
+}
+
+.cotact-pars.cotact-parsset > span
+{
+    line-height: 1;
+}
+
+
+/**
+ * And now to our regulurly programmed styling...
+ */
+
+BODY {
         height: 100%;
     }
     HTML,
@@ -170,15 +227,23 @@
         margin: 0;
         /*width: 51px;*/
         /*float: left;*/
+
+        /*
+        position: relative;
+        top: -400px;
+        */
     }
+    /*
+    NOTE: These were causing the intra-page links to be placed on their own lines (bad) rather than on one line (good).
     .entry-row {
         padding-top: 15px;
         clear: both;
     }
+    */
     .entry-body {
         opacity: 1;
         overflow: hidden;
-        position: static;
+        /*position: static;*/
         font-size: 13px;
     }
     #workspaceMovable {
@@ -389,6 +454,7 @@
 .mobile-static-img_5 {
     background-image: url(http://singlecard.co.uk/sites/all/themes/single/images/android/img-5_travel_.png);
 }
+
 
 /*@media screen and (max-device-width: 480px) and (orientation: landscape) {*/
 
