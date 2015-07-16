@@ -1,5 +1,42 @@
 //$.noConflict();
-$(function(){
+$(function()
+{
+  /**
+   * Monkey patching to get the subpage links working; basically just a simple show/hide
+   * of the link's corresponding content text.
+   */
+  var $currentSubpage = null;
+
+  $('.entry-link').on('touchend', function(event)
+  {
+    var $currentContent = $('#currentContent');
+    $currentContent.children('.intro').hide();
+
+    var $entryBodies = $currentContent.children('.entry-body');
+    $entryBodies.hide();
+
+    var $button = $(this);
+
+    var buttonIndex = $button.parent().index();
+
+    var $targetEntry = $currentContent.children('.entry-body:eq(' + buttonIndex + ')');
+    $targetEntry.show();
+
+    $currentSubpage = $targetEntry;
+  });
+
+
+  $('#detailButton').on('touchend', function(event)
+  {
+    if (!$currentSubpage) return;
+
+    $currentSubpage.hide();
+
+    var $currentContent = $('#currentContent');
+    $currentContent.children('.intro').show();
+
+    $currentSubpage = null;
+  });
 
   // HTML for content
   $('#booking_popup').popup({
