@@ -20,17 +20,14 @@
         //var IS_MOBILE_DEVICE_QUERY = 'screen and (max-width: 760px), (-webkit-device-pixel-ratio: 1.5)';
         var IS_MOBILE_DEVICE_QUERY = 'screen and (max-device-width: 500px)';
         var queryResult = window.matchMedia(IS_MOBILE_DEVICE_QUERY);
-console.info('Mobile device Query Result:', queryResult);
         if (queryResult.matches) // User is browsing from a mobile device!
         {
-console.info('\tiPhone!!');
             viewport = document.querySelector("meta[name=viewport]");
             viewport.setAttribute('content', 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no');
         }
         else
         {
             // User is not browsing from a mobile device.
-console.info('\tNot iPhone');
         }
     </script>
 
