@@ -87,6 +87,15 @@ UL.menu LI {
 		}
 	.isNotTouch .btn .jsVisualButton:hover {
 		}
+
+	/*
+	* Subpage links - give them selected state ('isActive/isPressed' below) on hoever.
+	*/
+	.entry-link .jsVisualButton:hover
+	{
+		border-color: #00a7e5;
+	}
+
 	.btn.isPressed .jsVisualButton,
 	.btn.isActive .jsVisualButton {
 	 border-color: #00a7e5;
