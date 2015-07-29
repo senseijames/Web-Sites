@@ -8,6 +8,13 @@
 UI.initWorkspace = function(object, minWidth, minHeight, time, states, isMobile, isPad) {
 //alert("minWidth="+minWidth+",minHeight=" + minHeight + ",time=" +time+",states="+ states); 
 
+  /**
+   * Store the index of the 'contact us' page so we know to disable
+   * showing the description (by clicking #detailButton) on it; while the
+   * button is hidden on that page, it is possible for the user to click
+   * the button while they are swiping to 'contact us' from a different page.
+   */
+  var CONTACT_US_PAGE_INDEX = 7;
 
 	var that = this,
 	    htmlDomObject = document.documentElement,
@@ -1031,6 +1038,10 @@ UI.initWorkspace = function(object, minWidth, minHeight, time, states, isMobile,
          * Показывает описание текущей ноды (для мобильных устройств)
          */
         function showMobileDescription(){
+            // Short circuit to avoid a bug.
+            if (currentIndex == CONTACT_US_PAGE_INDEX) {
+              return;
+            }
             if (isDescriptionVisible) {
                 that.removeClass(htmlDomObject, 'visible-description');
                 htmlDomObject.style.height = '';
