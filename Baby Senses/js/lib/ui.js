@@ -1373,14 +1373,15 @@ UI.initWorkspace = function(object, minWidth, minHeight, time, states, isMobile,
 //                }
 
                 // navigate between nodes by ←/→ arrows
-                that.addEvent(window, 'keydown', function(e){
-                    if (!nodeCurrent.isForm) {
-                        if (e.keyCode == 39) {
-                            move(currentIndex + 1);
-                        }
-                        if (e.keyCode == 37) {
-                            move(currentIndex - 1);
-                        }
+                that.addEvent(window, 'keydown', function(e)
+                {
+                    if (e.keyCode == 39 && !nodeCurrent.isForm) // RIGHT ARROW, disabled on last ('contact us') page.
+                    {
+                        move(currentIndex + 1);
+                    }
+                    if (e.keyCode == 37) // LEFT ARROW
+                    {
+                        move(currentIndex - 1);
                     }
                 });
 
