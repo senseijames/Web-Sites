@@ -1545,9 +1545,13 @@ i.breakline {
     bottom: -2px;
 } 
 		/*.isTouch .social-buttons,*/
-		.formActive .social-buttons {
-			opacity: 0;
-			}
+
+/*
+Design decision: show the social buttons on the 'contact us' page of the desktop site.
+.formActive .social-buttons {
+	opacity: 0;
+	}
+*/
 			.social-button {
 				display: inline-block;
 				margin-right: 13px;
