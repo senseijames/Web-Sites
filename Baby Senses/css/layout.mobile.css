@@ -17,11 +17,11 @@
 }
 
 #logo {
-    transform: scaleX(0.8) scaleY(0.8);
-    -webkit-transform : scaleX(0.8) scaleY(0.8);
-    -moz-transform : scaleX(0.8) scaleY(0.8);
-    -ms-transform : scaleX(0.8) scaleY(0.8);
-    -o-transform : scaleX(0.8) scaleY(0.8);
+    transform: scaleX(0.7) scaleY(0.7);
+    -webkit-transform : scaleX(0.7) scaleY(0.7);
+    -moz-transform : scaleX(0.7) scaleY(0.7);
+    -ms-transform : scaleX(0.7) scaleY(0.7);
+    -o-transform : scaleX(0.7) scaleY(0.7);
     transform-origin: top left;
     -webkit-transform-origin: top left;
     -moz-transform-origin: top left;
@@ -31,11 +31,11 @@
 }
 
 .menu {
-    transform: scaleX(0.8) scaleY(0.8);
-    -webkit-transform : scaleX(0.8) scaleY(0.8);
-    -moz-transform : scaleX(0.8) scaleY(0.8);
-    -ms-transform : scaleX(0.8) scaleY(0.8);
-    -o-transform : scaleX(0.8) scaleY(0.8);
+    transform: scaleX(0.75) scaleY(0.75);
+    -webkit-transform: scaleX(0.75) scaleY(0.75);
+    -moz-transform: scaleX(0.75) scaleY(0.75);
+    -ms-transform: scaleX(0.75) scaleY(0.75);
+    -o-transform: scaleX(0.75) scaleY(0.75);
     transform-origin: top right;
     -webkit-transform-origin: top right;
     -moz-transform-origin: top right;
