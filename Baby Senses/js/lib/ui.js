@@ -91,9 +91,8 @@ UI.initWorkspace = function(object, minWidth, minHeight, time, states, isMobile,
         eResize,
         hrefCache = window.location.href,
         mainHrefCache = hrefCache.split('#')[0],
-        associations = ['welcome', 'service', 'awareness', 'feeding', 'sleep', 'whoweare', 'references', 'contact'],
+        associations = ['welcome', 'service', 'prenatalclasses', 'newbornfeedingadvice', 'newbornsleepsupport', 'whoweare', 'references', 'contact'],
         currentNode = that.getUrlVars(hrefCache);
-//alert(nodeContents.length);
 
     function preventDefault(e) {
         e.preventDefault();
