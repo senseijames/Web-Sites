@@ -98,6 +98,14 @@
     line-height: 1;
 }
 
+/* Reduce the margin so the footer nav doesn't break onto two lines. */
+.footer-content
+{
+    margin : 0 10px;
+}
+
+
+
 
 /**
  * And now to our regulurly programmed styling...
