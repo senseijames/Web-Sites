@@ -19,11 +19,13 @@
     <script>
         //var IS_MOBILE_DEVICE_QUERY = 'screen and (max-width: 760px), (-webkit-device-pixel-ratio: 1.5)';
         var IS_MOBILE_DEVICE_QUERY = 'screen and (max-device-width: 500px)';
-        var queryResult = window.matchMedia(IS_MOBILE_DEVICE_QUERY);
-        if (queryResult.matches) // User is browsing from a mobile device!
+        var mobile_device_query_result = window.matchMedia(IS_MOBILE_DEVICE_QUERY);
+        var is_mobile_layout = mobile_device_query_result.matches;
+        
+        if (is_mobile_layout) // User is browsing from a mobile device!
         {
-            viewport = document.querySelector("meta[name=viewport]");
-            viewport.setAttribute('content', 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no');
+            var document_viewport = document.querySelector("meta[name=viewport]");
+            document_viewport.setAttribute('content', 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no');
         }
         else
         {
