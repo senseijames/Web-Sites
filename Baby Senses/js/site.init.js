@@ -7,36 +7,40 @@ $(function()
    */
   var $currentSubpage = null;
 
-  $('.entry-link').on('touchend', function(event)
+  // Make sure to only monkey patch the subpage links if we're in mobile mode - else we
+  // risk funky behavior on tablets, as touch events will fire!
+  if (is_mobile_layout)
   {
-    var $currentContent = $('#currentContent');
-    $currentContent.children('.intro').hide();
+    $('.entry-link').on('touchend', function(event)
+    {
+      var $currentContent = $('#currentContent');
+      $currentContent.children('.intro').hide();
 
-    var $entryBodies = $currentContent.children('.entry-body');
-    $entryBodies.hide();
+      var $entryBodies = $currentContent.children('.entry-body');
+      $entryBodies.hide();
 
-    var $button = $(this);
+      var $button = $(this);
 
-    var buttonIndex = $button.parent().index();
+      var buttonIndex = $button.parent().index();
 
-    var $targetEntry = $currentContent.children('.entry-body:eq(' + buttonIndex + ')');
-    $targetEntry.show();
+      var $targetEntry = $currentContent.children('.entry-body:eq(' + buttonIndex + ')');
+      $targetEntry.show();
 
-    $currentSubpage = $targetEntry;
-  });
+      $currentSubpage = $targetEntry;
+    });
 
+    $('#detailButton').on('touchend', function(event)
+    {
+      if (!$currentSubpage) return;
 
-  $('#detailButton').on('touchend', function(event)
-  {
-    if (!$currentSubpage) return;
+      $currentSubpage.hide();
 
-    $currentSubpage.hide();
+      var $currentContent = $('#currentContent');
+      $currentContent.children('.intro').show();
 
-    var $currentContent = $('#currentContent');
-    $currentContent.children('.intro').show();
-
-    $currentSubpage = null;
-  });
+      $currentSubpage = null;
+    });
+  }
 
   // HTML for content
   $('#booking_popup').popup({
