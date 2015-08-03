@@ -104,6 +104,14 @@
     margin : 0 10px;
 }
 
+/* Fix the bg position!!! */
+#figure
+{
+    position : relative;
+    left     : -280px;
+    top      : 40px;
+}
+
 
 
 
