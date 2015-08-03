@@ -83,6 +83,9 @@
     display: none;
 }
 
+#mobile_logo {
+    display: none;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Width management

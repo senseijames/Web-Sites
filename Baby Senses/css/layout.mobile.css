@@ -17,17 +17,13 @@
 }
 
 #logo {
-    transform: scaleX(0.7) scaleY(0.7);
-    -webkit-transform : scaleX(0.7) scaleY(0.7);
-    -moz-transform : scaleX(0.7) scaleY(0.7);
-    -ms-transform : scaleX(0.7) scaleY(0.7);
-    -o-transform : scaleX(0.7) scaleY(0.7);
-    transform-origin: top left;
-    -webkit-transform-origin: top left;
-    -moz-transform-origin: top left;
-    -ms-transform-origin: top left;
-    -o-transform-origin: top left;
-    width: 150px;
+    display: none;
+}
+
+#mobile_logo_image
+{
+    position:relative;
+    top: 21px;
 }
 
 .menu {
@@ -66,6 +62,7 @@
 #booking_button_mobile {
     position: absolute;
     right: 10px;
+    top: 2px;
     /* Just enough to keep it above the header content! */
     z-index: 8;
 }

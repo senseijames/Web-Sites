@@ -21,7 +21,7 @@
         var IS_MOBILE_DEVICE_QUERY = 'screen and (max-device-width: 500px)';
         var mobile_device_query_result = window.matchMedia(IS_MOBILE_DEVICE_QUERY);
         var is_mobile_layout = mobile_device_query_result.matches;
-        
+
         if (is_mobile_layout) // User is browsing from a mobile device!
         {
             var document_viewport = document.querySelector("meta[name=viewport]");
@@ -103,6 +103,9 @@
 
     <div class="header">
         <div class="header-content clearfix" id="header">
+            <a href="index.html" title="BabySenses" rel="home" id="mobile_logo">
+                <img src="images/logo2.png" id="mobile_logo_image">
+            </a>
             <a href="index.html" title="BabySenses" rel="home" id="logo">
                 <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      width="270px" height="61px" viewBox="0 0 270 61" enable-background="new 0 0 270 61" xml:space="preserve">
