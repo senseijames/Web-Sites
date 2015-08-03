@@ -123,6 +123,11 @@
     margin-right: 6px;
 }
 
+/* Make sure the bg is below the contact us page */
+.formActive #workspaceMovable {
+    z-index: 1;
+}
+
 
 
 
