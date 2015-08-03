@@ -242,6 +242,7 @@ UI.initWorkspace = function(object, minWidth, minHeight, time, states, isMobile,
 
     /**
      * Двигает воркспейс до нужной ноды
+     * "Moves to the desired node workspace" - where the page navigation actually happens!
      * @param {Number} index индекс ноды, которая должна стать текущей
      */
     function move(index) {
@@ -476,14 +477,18 @@ UI.initWorkspace = function(object, minWidth, minHeight, time, states, isMobile,
 
     /*
      * Подстраивает размер главной SVG под разрешение экрана
+     * "It adjusts the size of the main SVG screen resolution"
+     * This method sets the bg size.
      */
     function adjustSVGParams() {
         if (!that.$d.isOldAndroid && !that.$d.isOldIE && figure) {
             // обновленные размеры контейнера
+            // "Updated container sizes"
             screenHeight = object.offsetHeight;
             screenWidth = object.offsetWidth;
 
             // коэффициенты размеров экрана к оригинальным
+            // "coefficients to the original screen size"
             widthRatio = screenWidth / minWidth;
             heightRatio = screenHeight / minHeight;
 
@@ -502,15 +507,11 @@ UI.initWorkspace = function(object, minWidth, minHeight, time, states, isMobile,
             if(!isMobile) {
                 movable.style.marginTop = (screenHeight - movable.height) / 2 + 'px';
                 // чтобы нормально отображалось на маленьких высотах (iPad с вкладками, букмарк-баром и дебаг-консолью)
+                // "That is normally displayed on small heights (iPad tabbed bukmarki bar and a debug console)"
 //                if (movable.height < 495) {
 //                    movable.height = 495;
 //                }
             }
-//            console.log(screenHeight);
-//            console.log(movable.height);
-//            if (movable.width) {
-//            	;
-//            }
             figure.width = Math.round(movable.width);
             figure.height = Math.round(movable.height);
             that.setAttributes(figure.element, {
@@ -603,6 +604,7 @@ UI.initWorkspace = function(object, minWidth, minHeight, time, states, isMobile,
 
     /**
      * Устанавливает необходимую ширину для каждой из нод в соответствии с шириной общего родительского контейнера
+     * "Sets the desired width for each of the nodes in accordance with the overall width of the parent container"
      */
 	function resize() {
         adjustSVGParams();
