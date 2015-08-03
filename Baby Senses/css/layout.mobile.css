@@ -43,6 +43,14 @@
 .footer-contacts
 {
     top  : 68px;
+    text-align : center;
+    width : 100%;
+}
+
+/* Footer contact label (E.g. "E:" for 'Email:' */
+.ftrlabel-text.label-text label
+{
+    float: none;
 }
 
 .entry-body
