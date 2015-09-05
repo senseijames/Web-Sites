@@ -20,3 +20,54 @@ a:visited {
 a:hover {
 	color: #FFFFFF;
 }
+
+#main_title
+{
+	font-size: 34px
+}
+
+
+/** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * "Let's get responsive in here!"
+ *    - Will.i.am.
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width:417px)
+{
+	#main_title
+	{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width:377px)
+{
+	#main_title
+	{
+		font-size: 26px;
+	}
+}
+
+@media screen and (max-width:336px)
+{
+	#main_title
+	{
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width:295px)
+{
+	#main_title
+	{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:275px)
+{
+	#main_title
+	{
+		font-size: 18px;
+	}
+}
