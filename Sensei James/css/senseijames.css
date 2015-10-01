@@ -26,6 +26,31 @@ a:hover {
 	font-size: 34px
 }
 
+.github_text
+{
+    font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    left: -46px;
+    top: -3px;
+}
+
+.image_link
+{
+    text-decoration: none;
+}
+
+.twitter_logo
+{
+    position: relative;
+    left: 22px;
+}
+
+
 
 /** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * "Let's get responsive in here!"
