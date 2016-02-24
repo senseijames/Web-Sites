@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+.title_font
+{
+	font-family: "Papyrus", Times, serif;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.title {
+	font-size: 40px;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.supertitle{
+	font-size: 50px;
+	border-bottom: solid;
+	border-bottom-width: 1px;
+	padding-top: 10px;
+	padding-bottom: 14px
+}
+
+.supersubtitle{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.link_bar
+{
+	text-align : center;
+}
+.link_bar > td > a
+{
+	text-decoration: none;
+	color : #FFFFFF;
+}
+
+.link_bar_middle_link
+{
+	border-left-style: dashed;
+	border-right-style: dashed;
+	border-width: 2px
+}
+
+.link_bar > td
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding: 17px;
+}
+/*
+.custom_underline {
+	text-decoration: none; 
+	background: url(images/custom_underline.png) repeat-x 100% 100%;
+	padding-bottom: 4px;
+	white-space: nowrap;
+}
+*/
+.form_input {
+	border-color: black;
+	border-width: 2px;
+	font-size: 14px;
+}
+#main_image
+{
+	position : relative;
+	top: -14px;
+	transform: scale(1.1)
+}
+.motto_text
+{
+	position : relative;
+	top: -5px;
+}
+.main_text
+{
+	font-family: "Papyrus", Times, serif;
+	font-size: 26px;
+	color : brown;
+	text-shadow: none;
+}
+.motto_row
+{
+	text-align:center;
+}
+.motto_text
+{
+	font-size: 24px;
+	color : brown;
+	text-shadow: none;
+}
+.black_text{
+	color: #000000;
+}
+.phone_number {
+	font-size: 41px;
+	font-weight: bold;
+}
+
+.subtitle {
+	font-family: "Papyrus", Times, serif;
+	font-size: 30px;
+	text-shadow: 2px 2px 2px #000;
+}
+.text {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+}
+.text_large {
+	font-size: 27px;
+	color: orange;
+}
+.text_medium
+{
+	font-size: 23px;
+}
+.text_small {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+}
+.links {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+}
+.input_first_name
+{
+	width: 244px;
+}
+.input_email_last
+{
+	width: 243px;
+}
+.input_phone_last
+{
+	width: 74px;
+}
+.email_services
+{
+	color: orange;
+}
+.contact_subtable
+{
+	text-shadow: none;
+}
+a:hover {
+	color: #990033;
+}
+
+body {
+	background-color: #FCF0B6;
+	background-image: url('images/kernel_bg.png');
+	font-weight: bold;
+	color: #FFFFFF;
+}
+a{
+	color: #FFFFFF;
+}
+
+table
+{
+	color : orange;
+	background-color: #FCF0B6;
+}
+
+#menu {
+	position: absolute;
+	height: 50px;
+	width: 800px;
+	top: 20px;
+}
