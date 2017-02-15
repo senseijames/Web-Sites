@@ -2,12 +2,14 @@ body {
 /*
   background-color:#000023;
   */
+
+  /*At first it was -95 pixels. I changed it to -80 because that way the Mamba Logo was not cut out */
   padding:20;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, monospace, Arial;
   color:#000000;
   font-weight: bold;
   position: relative;
-  top: -95px;
+  top: -80px;
   background-image:url('../images/snakeskin_full_gradient.jpg');
   background-size: 100% auto;
   background-attachment: fixed;
@@ -26,7 +28,7 @@ hr {
 /*
   font-family: Impact, Charcoal, sans-serif;
 */
-  font-family: "Segoe Script","Courier New", Courier, monospace; 
+  font-family: "Segoe Script","Courier New", Courier, monospace;
   font-size: 50px;
   margin-bottom: -15px;
   /* TODO: If the end system doesn't have Segoe Script, margin should be 0px */

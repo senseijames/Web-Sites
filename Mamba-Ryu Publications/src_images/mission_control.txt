@@ -1,18 +1,18 @@
 /*
 1. Links page - add bg images that scroll with the content - like an thin, intermediate bg.  Seemingly random images, but they light up on mouseover of
    their relevant link.
-2. get at Amazon re. why the author page isn't showing all of our works, damnit! 
+2. get at Amazon re. why the author page isn't showing all of our works, damnit!
 
 
 From Gustavo-Sempai - Videos to incorporate
 * * * * * * * * * * * * * * * * * * * * * * * *
-- This is a video which offers the introduction to one of the evolved programs called : Mente e Identidad del Guerrero Iluminado 
+- This is a video which offers the introduction to one of the evolved programs called : Mente e Identidad del Guerrero Iluminado
   http://menteidentidaddelguerreroiluminado.blogspot.mx/2011/05/introduccion-al-programa-mente-e.html
-- Jimmy sensei, I do not known if you want to add as a part of a whole a link about hypnosis and chamanism, 
+- Jimmy sensei, I do not known if you want to add as a part of a whole a link about hypnosis and chamanism,
   in this link the reader can get a brief information about both plus a 80 minute video with Mayra sempai and
   her hypno-chamanic trance :) http://artesmentalesdelsennin.blogspot.mx/
-- This blog might contain some good information about the founder, it provides the curriculum and information about programs 
-  of mind control, MAMBA Mindfulness, a little 10 minutes video introduction about the progam in general 
+- This blog might contain some good information about the founder, it provides the curriculum and information about programs
+  of mind control, MAMBA Mindfulness, a little 10 minutes video introduction about the progam in general
   http://mentedelguerrero.blogspot.mx/search?updated-min=2009-01-01T00%3A00%3A00-08%3A00&updated-max=2010-01-01T00%3A00%3A00-08%3A00&max-results=1
 
 
@@ -30,7 +30,7 @@ Finaling plan:
 ??? for El Circulo
 1. all blogs / other sites including public facebook groups so
    can put all of them on the "links" page
-2. need new reviews and descriptions for some books, but when??    
+2. need new reviews and descriptions for some books, but when??
 3. how does it look in general?
 
 
@@ -46,8 +46,8 @@ Finaling plan:
 3. Consider adding tooltips for comment text:
    - http://www.webdesignerdepot.com/2012/11/how-to-create-a-simple-css3-tooltip/
    - http://stackoverflow.com/questions/17391194/tooltip-with-html-content-without-javascript
-   
-   
+
+
 1. Masters of the Art of Mind-Body in Action
    MAMBA-Ryu Publications intend to disseminate knowledge about
    the... (cop from Maestros Kaizen)
@@ -70,7 +70,7 @@ Finaling plan:
    top left, add placeholder text ("If"), and populate with back cover at
    lower right.  Ping Gustavo-Sempai for crtical acclaim content!
 5. Remove "links" for now
-6. About the Author - link out to Amazon page for now
+6. The Author - link out to Amazon page for now
 7. Sobre MAMBA Ryu - use o old site, perchance, to get something out
    there.  Will need to talk to Pops or Gustavo about how relevant
    that content still is.
