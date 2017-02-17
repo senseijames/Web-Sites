@@ -1,6 +1,13 @@
 $(document).ready(function(){
-	
-	var BOOK_PAGES = [  "books/MaestrosKaizen.html",
+
+	//Ok so the following are exclusively for the console and do not do anything else.
+	console.log("What uo dude??");
+	console.debug("This is some debug text");
+console.info("This is some info");
+console.warn("This is a warning!");
+console.error("This is an error!");
+var BOOK_PAGES = [  "books/MaestrosKaizen.html",
+//End of console show
 	                    "books/MandatedReport.html",
 	                    "books/PoemasDeUnSennin.html",
 	                    "books/DonJuan.html",
@@ -13,11 +20,14 @@ $(document).ready(function(){
 	                    "books/Penuel.html",
                       "books/MisticismoDelSennin.html",
                       "books/SabioGuerrero.html",
-                      "books/DemonioMara.html"];
+                      "books/DemonioMara.html",
+										"books/BrokenArrow.html",
+										"books/Ninshou.html",
+										"books/Cronicas.html"];
 	var BOOK_PAGE_ID_PREFIX_LENGTH 	= 11; // "book_cover_N"
 	var BOOK_DESC_ID_PREFIX 		= "#book_desc_";
 	var BOOK_COMMENT_CLASS_PREFIX   = ".book_comment_";
-	
+
 	/**
 	 * When a slide image is clicked, determine which page we should nav to based on
 	 * the id, which is an index into the "book_pages" array.
@@ -29,24 +39,24 @@ $(document).ready(function(){
 			window.location = click_target;
 		}
 	});
-	
+
 	function get_page_from_image_id (id)
 	{
 		return BOOK_PAGES [get_book_index (id)];
 	}
-	
-	
+
+
 	/**
 	 * Each time a slide transition happens, cross fade the description and comments text.
 	 */
 	$("#slideshow").on ("cycle-before", function(event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag) {
 		var outgoing_book_index = get_book_index (outgoingSlideEl.id);
 		var incoming_book_index = get_book_index (incomingSlideEl.id);
-		
+
 		// Cross-fade the description text.
 		$(BOOK_DESC_ID_PREFIX + outgoing_book_index).fadeOut();
 		$(BOOK_DESC_ID_PREFIX + incoming_book_index).fadeIn();
-		
+
 		// Cross-fade the comment text.
 /*
  * TODO: Re-enable when the time comes.
@@ -54,18 +64,18 @@ $(document).ready(function(){
 		$(BOOK_COMMENT_CLASS_PREFIX + incoming_book_index).fadeIn();
 */
 	});
-	
-	
+
+
 	function get_book_index (id)
 	{
 		return id.substring (BOOK_PAGE_ID_PREFIX_LENGTH);
 	}
-	
-	
+
+
 //	function center_element ($elem)
 //	{
 //		$elem ('left', 0.5 * ($(window).width() - $elem.width()));
 //	}
-	
 
-}); 
+
+});
