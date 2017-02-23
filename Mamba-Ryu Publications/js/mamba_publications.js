@@ -1,14 +1,8 @@
 $(document).ready(function(){
 
-	//Ok so the following are exclusively for the console and do not do anything else.
-	console.log("What uo dude??");
-	console.debug("This is some debug text");
-console.info("This is some info");
-console.warn("This is a warning!");
-console.error("This is an error!");
-var BOOK_PAGES = [  "books/MaestrosKaizen.html",
-//End of console show
-	                    "books/MandatedReport.html",
+	var BOOK_PAGES = [  "books/MaestrosKaizen.html",
+	//End of console show
+											"books/BrokenArrow.html",
 	                    "books/PoemasDeUnSennin.html",
 	                    "books/DonJuan.html",
 	                    "books/JulioWolf.html",
@@ -21,9 +15,9 @@ var BOOK_PAGES = [  "books/MaestrosKaizen.html",
                       "books/MisticismoDelSennin.html",
                       "books/SabioGuerrero.html",
                       "books/DemonioMara.html",
-										"books/BrokenArrow.html",
-										"books/Ninshou.html",
-										"books/Cronicas.html"];
+											"books/MandatedReport.html",
+											"books/Ninshou.html",
+											"books/Cronicas.html"];
 	var BOOK_PAGE_ID_PREFIX_LENGTH 	= 11; // "book_cover_N"
 	var BOOK_DESC_ID_PREFIX 		= "#book_desc_";
 	var BOOK_COMMENT_CLASS_PREFIX   = ".book_comment_";
