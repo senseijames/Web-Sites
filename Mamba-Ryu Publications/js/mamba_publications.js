@@ -17,7 +17,9 @@ $(document).ready(function(){
                       "books/DemonioMara.html",
 											"books/MandatedReport.html",
 											"books/Ninshou.html",
-											"books/Cronicas.html"];
+											"books/Cronicas.html",
+											"books/MessageToAmerica.html"
+										];
 	var BOOK_PAGE_ID_PREFIX_LENGTH 	= 11; // "book_cover_N"
 	var BOOK_DESC_ID_PREFIX 		= "#book_desc_";
 	var BOOK_COMMENT_CLASS_PREFIX   = ".book_comment_";
