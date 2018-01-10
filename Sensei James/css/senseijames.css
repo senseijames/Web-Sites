@@ -1,6 +1,6 @@
 body {
-	background-color: #000023;
-	padding: 20px;
+	background-color: #2e293a;
+	padding: 0px 20px 20px 20px;
 	font-family: courier;
 }
 p {
@@ -14,25 +14,50 @@ a:link {
 }
 
 a:visited {
-	color: #CA2E21;
+	color: thistle;
+}
+p.small_text
+{
+	font-size : 14px;
 }
 
 a:hover {
 	color: #FFFFFF;
 }
 
-#main_title
+span#sample_imgs > a
 {
-	font-size: 34px
+	text-decoration: none;
 }
-#main_subtitle
+span#sample_imgs img
+{
+	border-radius : 12px;
+	max-width : 300px;
+	padding : 7px;
+}
+
+p#main_title
+{
+	font-size: 34px;
+	margin-top: 0px;
+}
+p#main_title > span.main
+{
+	position: relative;
+	top: 87px;
+}
+p#main_title > img
+{
+	border-radius: 12px;
+}
+span#main_subtitle
 {
 	font-size: 18px;
 	position: relative;
 	top: -10px;
 }
 
-.github_text
+span.github_text
 {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size: 16px;
@@ -45,18 +70,18 @@ a:hover {
     top: -3px;
 }
 
-.image_link
+a.image_link
 {
     text-decoration: none;
 }
 
-.twitter_logo
+img.twitter_logo
 {
     position: relative;
     left: 22px;
 }
 
-.codepen_logo
+img.codepen_logo
 {
 	position: relative;
 	left: 22px;
@@ -69,13 +94,34 @@ a:hover {
  *    - Will.i.am.
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+@media screen and (max-width:565px)
+{
+	p#main_title > span.main
+	{
+		top: 0px;
+	}
+	p#main_title > img {
+		position: absolute;
+		top: 7px;
+		right: 7px;
+	}
+}
+
+@media screen and (max-width:516px) {
+	p#main_title > img {
+		z-index : 0;
+		opacity : 0.5;
+	}
+}
+
 @media screen and (max-width:417px)
 {
-	#main_title
+
+	p#main_title
 	{
 		font-size: 30px;
 	}
-	#main_subtitle
+	span#main_subtitle
 	{
 		font-size: 16px;
 	}
@@ -83,11 +129,11 @@ a:hover {
 
 @media screen and (max-width:377px)
 {
-	#main_title
+	p#main_title
 	{
 		font-size: 26px;
 	}
-	#main_subtitle
+	span#main_subtitle
 	{
 		font-size: 14px;
 	}
@@ -95,7 +141,7 @@ a:hover {
 
 @media screen and (max-width:336px)
 {
-	#main_title
+	p#main_title
 	{
 		font-size: 22px;
 	}
@@ -103,7 +149,7 @@ a:hover {
 
 @media screen and (max-width:295px)
 {
-	#main_title
+	p#main_title
 	{
 		font-size: 20px;
 	}
@@ -111,7 +157,7 @@ a:hover {
 
 @media screen and (max-width:275px)
 {
-	#main_title
+	p#main_title
 	{
 		font-size: 18px;
 	}
