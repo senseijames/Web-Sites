@@ -57,6 +57,15 @@
 	color: #FFFFFF;
 	font-style: italic;
 }
+.text_micro {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-style: italic;
+	margin-bottom: 0;
+	position: relative;
+	bottom: 12px;
+}
 .links {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 20px;
