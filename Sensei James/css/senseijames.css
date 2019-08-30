@@ -87,6 +87,14 @@ img.codepen_logo
 	left: 22px;
 }
 
+a.stackblitz {
+	text-decoration: none;
+}
+a.stackblitz > img:nth-child(2) {
+	position: relative;
+	right: 10px;
+	top: 3px;
+}
 
 
 /** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
