@@ -75,6 +75,16 @@ a.image_link
     text-decoration: none;
 }
 
+a.gamejolt
+{
+	text-decoration: none;
+	position: relative;
+}
+a.gamejolt > img {
+	position: absolute;
+	bottom: 100px;
+}
+
 img.twitter_logo
 {
     position: relative;
