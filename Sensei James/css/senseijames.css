@@ -3,7 +3,7 @@ body {
 	padding: 0 20px 20px 20px;
 	font-family: courier;
 }
-p {
+p, ul {
 	color: #ffffff;
 }
 
@@ -19,6 +19,7 @@ a:visited {
 p.small_text
 {
 	font-size : 14px;
+	line-height: 21px;
 }
 
 a:hover {
@@ -39,14 +40,14 @@ span#sample_imgs img
 p#main_title
 {
 	font-size: 34px;
-	margin-top: 0px;
+	margin-top: 0;
 }
 p#main_title > span.main
 {
 	position: relative;
 	top: 87px;
 }
-p#main_title > img
+p#main_title img
 {
 	border-radius: 12px;
 }
@@ -116,7 +117,7 @@ a.stackblitz > img:nth-child(2) {
 {
 	p#main_title > span.main
 	{
-		top: 0px;
+		top: 0;
 	}
 	p#main_title > img {
 		position: absolute;
