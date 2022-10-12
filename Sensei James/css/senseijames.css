@@ -80,6 +80,21 @@ a.gamejolt
 {
 	text-decoration: none;
 	position: relative;
+	top: 42px;
+	right: 22px;
+}
+a.gamejolt .screenshot {
+	width: 27vw;
+	min-width: 200px;
+	max-width: 240px;
+	bottom: 70px;
+}
+a.gamejolt .poster {
+	width: 51vw;
+	min-width: 280px;
+	max-width: 463px;
+	bottom: 186px;
+	border-radius: 12px;
 }
 a.gamejolt > img {
 	position: absolute;
@@ -96,10 +111,16 @@ img.codepen_logo
 {
 	position: relative;
 	left: 22px;
+	top: 12px;
 }
 
 a.stackblitz {
 	text-decoration: none;
+	margin-left: 40px;
+	display: inline-block;
+	margin-top: 12px;
+	position: relative;
+	top: 3px;
 }
 a.stackblitz > img:nth-child(2) {
 	position: relative;
