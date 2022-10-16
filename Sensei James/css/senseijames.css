@@ -22,6 +22,10 @@ p.small_text
 	line-height: 21px;
 }
 
+li {
+	list-style-type: circle;
+}
+
 a:hover {
 	color: #FFFFFF;
 }
@@ -80,8 +84,8 @@ a.gamejolt
 {
 	text-decoration: none;
 	position: relative;
-	top: 42px;
-	right: 22px;
+	top: 75px;
+	right: -37px;
 }
 a.gamejolt .screenshot {
 	width: 27vw;
@@ -101,10 +105,9 @@ a.gamejolt > img {
 	bottom: 100px;
 }
 
-img.twitter_logo
+a.social_logo
 {
-    position: relative;
-    left: 22px;
+	padding-left: 22px;
 }
 
 img.codepen_logo
