@@ -1,28 +1,28 @@
-<!DOCTYPE html-->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Patricia Overton</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.png">
 
-<title>Patricia Rumanova</title>
 
-<link href="css/patricia.css" rel="stylesheet" type="text/css">
-</head>
+  <script>
+    // Our backend serves from port 5000 locally, from /prumanova/
+    if (location.hostname.includes('localhost')
+     && location.port === '5000')
+    {
+      const baseTags = document.getElementsByTagName('base');
+      baseTags.item(0)?.setAttribute('href', '/prumanova/');
+    }
+  </script>
 
-<body class="center">
-<div>
-	<p style="font-size:34">Patricia Rumanova
-	</p>
-</div>
-
-<div>
-	<img src="images/joan_rivers.jpg"/>
-</div>
-
-<br>
-
-<div>
-	<p style="font-size:40">COMING SOON!</p>
-</div>
-
-<br>
-<a href="mailto:info@patriciarumanova.com">info@patriciarumanova.com</a>
+<!-- NOTE: not yet using Google fonts... -->
+<!--  <link rel="preconnect" href="https://fonts.gstatic.com">-->
+<!--  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">-->
+<!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+<style>body{margin:0;font-family:Papyrus,Roboto,Helvetica Neue,sans-serif;cursor:url(wand-cursor.f559ca20143b00ae.png),auto}body{background-color:#c5e1a5;color:#ccaf14;padding:20px}</style><link rel="stylesheet" href="styles.a8d5d95159d6e0c0.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.a8d5d95159d6e0c0.css"></noscript></head>
+<body class="mat-typography">
+  <app-root></app-root>
+<script src="runtime.0143cc5446327a63.js" type="module"></script><script src="polyfills.96d3fd696a2f3da9.js" type="module"></script><script src="main.523ad29860db739d.js" type="module"></script>
 
 </body></html>
